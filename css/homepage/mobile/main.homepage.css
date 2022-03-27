@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    max-width: 100%;
+}
+
+
+#start-Order-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    
+    font-family: 'roboto',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+
+    height: 10vh;
+    border-radius: 100px;
+    width: 60%;
+    background-color: aqua;
+}
