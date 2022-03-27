@@ -4,8 +4,8 @@
 
 
 header {
-    
-    display: flex;
+   
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -17,23 +17,6 @@ header {
     box-shadow: 0px 2px 11px -4px #000000;
   
     background-attachment: fixed;
-
+    z-index: 0;
     color: rgba(255, 255, 255, 0.87);
-}
-
-h1 {
-    text-align: center;
-    font-family: 'roboto', sans-serif;
-    text-transform:uppercase;
-    font-weight: 700;
-    font-size: 2.5vh;
-    
-}
-
-h2 {
-    text-align: center;
-    font-family: 'roboto', sans-serif;
-    text-transform:uppercase;
-    font-weight: 300;
-    font-size: 2.5vh;
 }
