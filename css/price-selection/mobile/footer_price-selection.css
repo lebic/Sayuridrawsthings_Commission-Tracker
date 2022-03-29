@@ -1,0 +1,25 @@
+#icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  
+    margin-inline: 10vh;
+    height: 10vh;
+  }
+  
+  .icon-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  
+    color: #d8a6d5;
+  
+    width: 6vh;
+    height: 6vh;
+  
+    box-shadow: 0px 2px 16px -4px #000000ab;
+    border-radius: 5vh;
+    background-color: rgb(255, 255, 255);
+  }
