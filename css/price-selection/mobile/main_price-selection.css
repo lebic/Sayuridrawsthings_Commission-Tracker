@@ -6,6 +6,8 @@ main {
   z-index: 0;
 }
 
+/* LEFT CARD (Character) */
+
 #first-option {
   display: flex;
   justify-content: center;
@@ -16,10 +18,12 @@ main {
 
   width: 50%;
   height: 70vh;
-  background: url("/assets/images/Neon\ Sunset.png");
+  background: url("/assets/images/SFW_Cold\ Mountain_Light.jpg");
   background-size: cover;
-  background-position: 20%;
+  background-position: 51%;
 }
+
+/*RIGHT CARD (Backgrounds) */
 
 #second-option {
   display: flex;
@@ -36,11 +40,13 @@ main {
   background-position: 20%;
 }
 
+/*BUTTON CARD NAME*/
+
 h3 {
   font-family: "roboto", sans-serif;
   font-variant: small-caps;
-  font-size: 2vh;
-  font-weight: 500;
+  font-size: 2.1vh;
+  font-weight: 400;
 }
 
 .character-button {
@@ -52,7 +58,7 @@ h3 {
   height: 5vh;
 
   box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.205);
-  border-radius: 1vh;
+  border-radius: 1.6vh;
   background-color: rgb(255, 255, 255);
 }
 
@@ -65,6 +71,22 @@ h3 {
   height: 5vh;
 
   box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.205);
-  border-radius: 1vh;
+  border-radius: 1.6vh;
   background-color: rgb(255, 255, 255);
 }
+
+/* BUTTON CARD HOVER/CLICK ANIMATION (to add in JS as a new class when clicked) */
+
+
+.animate__pulse {
+  color: white;
+  background: linear-gradient(0.25turn, #ffbafc, #d133cc);
+  border: solid;
+  border-width: 0.1vh;
+  border-color: white;
+  animation-duration: 600ms;
+  animation-delay: 100ms;
+}
+
+
+
