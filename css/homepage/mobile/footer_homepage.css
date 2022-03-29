@@ -1,30 +1,25 @@
-
-
 #icon-container {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-margin-inline: 10vh;
-height: 10vh;
-
+  margin-inline: 10vh;
+  height: 10vh;
 }
 
 .icon-brand {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    color: #d8a6d5;
-    
-    width:6vh;
-    height: 6vh;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-    box-shadow: 0px 2px 16px -4px #000000ab;
-    border-radius: 5vh;
-    background-color: rgb(255, 255, 255);
+  color: #d8a6d5;
+
+  width: 6vh;
+  height: 6vh;
+
+  box-shadow: 0px 2px 16px -4px #000000ab;
+  border-radius: 5vh;
+  background-color: rgb(255, 255, 255);
 }
-
