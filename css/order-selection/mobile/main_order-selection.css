@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    height: 200vh;
+    background: url("/assets/images/Dojo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 1vh;
+
+    font-family: 'roboto',sans-serif;
+    font-size: 2vh;
+    font-variant: small-caps;
+    font-weight: 300;
+    
+    border-top-left-radius:7% ;
+    border-bottom-left-radius:7% ;
+
+    width: 25vh;
+    height: 7vh;
+    background-color: white;
+}
+
+#card-price p {
+
+}
+
+
+/*------------------MAIN CARD ELEMENT*----------------*/
+
+
+#card-option{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    margin-top: 5vh;
+
+    padding-top: 5vh ;
+
+    width:40vh;
+    height: fit-content;
+    background-color: white;
+}

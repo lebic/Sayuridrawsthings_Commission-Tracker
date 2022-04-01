@@ -18,7 +18,7 @@ main {
 
   width: 50%;
   height: 70vh;
-  background: url("/assets/images/SFW_Cold\ Mountain_Light.jpg");
+  background: url("/assets/images/SFW_Cold-\ Mountain_Light.jpg");
   background-size: cover;
   background-position: 51%;
 }
@@ -35,14 +35,14 @@ main {
 
   width: 50%;
   height: 70vh;
-  background: url("/assets/images/Neon\ Sunset.png");
+  background: url("/assets/images/Neon_Sunset.png");
   background-size: cover;
   background-position: 20%;
 }
 
 /*BUTTON CARD NAME*/
 
-h3 {
+.button-style {
   font-family: "roboto", sans-serif;
   font-variant: small-caps;
   font-size: 2.1vh;
@@ -78,7 +78,7 @@ h3 {
 /* BUTTON CARD HOVER/CLICK ANIMATION (to add in JS as a new class when clicked) */
 
 
-.animate__pulse {
+.animate_pulse {
   color: white;
   background: linear-gradient(0.25turn, #ffbafc, #d133cc);
   border: solid;
