@@ -1,8 +1,18 @@
+:root{
+    --selectiongradient1:  #d133cc;
+    --selectiongradient2:#ffbafc;
+    --fontcolor: #8f8f8fec;
+    --fontcoloredbackground: white;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: flex-start;
+   
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
     height: 200vh;
     background: url("/assets/images/Dojo.png");
     background-repeat: no-repeat;
@@ -13,41 +23,285 @@ main {
 #card-price {
     display: flex;
     flex-direction: column;
+    flex-basis: 0 0 100%;
     justify-content: flex-start;
+    align-items: flex-start;
+
+
+    position: fixed;
+    right: 0px;
+    top: 7vh;
 
     padding: 1vh;
+    padding-left: 2vh;
 
     font-family: 'roboto',sans-serif;
-    font-size: 2vh;
+    font-size: 1.6vh;
     font-variant: small-caps;
     font-weight: 300;
+    line-height: 2.6vh;
     
-    border-top-left-radius:7% ;
-    border-bottom-left-radius:7% ;
+    border-top-left-radius:2vh ;
+    border-bottom-left-radius:2vh ;
+    box-shadow:5px 5px 8px 3px rgba(0,0,0,0.14) ;
 
-    width: 25vh;
-    height: 7vh;
+    width: 42%;
+    height: 7.5vh;
     background-color: white;
+
+    z-index: 1;
 }
 
 #card-price p {
-
+    font-family: 'roboto',sans-serif;
+    font-size: 2.5vh;
+    font-variant: small-caps;
+    font-weight: 500;
+    color:var(--selectiongradient1);
 }
 
 
 /*------------------MAIN CARD ELEMENT*----------------*/
 
 
-#card-option{
+
+#card-list{
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     
+    position:relative;
+    top: 6vh;
+
     margin-top: 5vh;
 
     padding-top: 5vh ;
+    padding-inline: 2vh ;
+
+    border-radius: 1.2vh;
 
     width:40vh;
-    height: fit-content;
+    height: 60vh;
+    
+    outline: none;
     background-color: white;
 }
+
+/*------ ARTSYLE QUESTION-----------*/
+
+ h3{
+    display: flex;
+
+    margin-left: 1vh;
+   
+    font-family:'roboto',sans-serif;
+    font-size: 1.7vh;
+    font-weight: 380;
+    color:var(--fontcolor) ;
+    
+}
+#artstyle-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#artstyle-button-container {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 36vh;
+    height: 19vh;
+    outline: none;
+}
+
+/* BUTTON STYLE FOR ALL SELECTION TYPE QUESTIONS*/
+
+
+.artstyle-button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 16vh;
+    height: 4vh;
+
+    margin: 1vh;
+
+    font-family:'roboto',sans-serif;
+    font-size: 1.5vh;
+    color:var(--fontcolor) ;
+   
+    border-radius: 2vh ;
+    border-color: var(--fontcolor);
+
+    outline:none;
+}
+
+/* Clicked state */
+
+.highlight-button { 
+    outline: none !important;
+    
+    box-shadow: 0 0 5px #27272731;
+
+    color:white ;
+
+    background: linear-gradient(0.25turn,var(--selectiongradient2) ,var(--selectiongradient1));
+
+
+    border: solid;
+    border-radius: 2vh ;
+    border-width: 0.2vh;
+    border-color: var(--selectiongradient1);
+    
+}
+
+
+
+/*------------- NB OF CHARACTER QUESTION---------------*/
+
+
+
+#character-nb_container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    margin-top: 3vh;
+
+    color: var(--fontcolor);
+
+    height: 10vh;
+    width: 100%;
+}
+
+
+.slidecontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%; /* Width of the outside container */
+  }
+
+#character-number{
+    display: flex;
+
+    margin: 0px;
+    
+    align-items: center;
+    justify-content: center;
+
+    color: var(--fontcolor);
+    border: solid;
+    border-width: 0.1vh;
+    border-radius: 1vh;
+    border-color: var(--fontcolor);
+    width: 4vh;
+    height: 4vh;
+    background: white;
+    
+
+}
+
+
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 4px;
+    margin: 1vh;
+
+    width: 30vh; /* Full-width */
+    height: 3vh; /* Specified height */
+    background: linear-gradient(0.25turn,var(--selectiongradient2) ,var(--selectiongradient1)); /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    border-radius: 1.9vh;
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+ 
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 50%;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: rgb(255, 255, 255); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /*------------- KIND OF SHOT QUESTION---------------*/
+  #shot-container {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      margin-top: 3vh;
+  }
+  
+  #shot-button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+  }
+
+  .shot-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 16vh;
+    height: 4vh;
+
+    margin: 1vh;
+
+    font-family:'roboto',sans-serif;
+    font-size: 1.5vh;
+    color:var(--fontcolor) ;
+   
+    border-radius: 2vh ;
+    border-color: var(--fontcolor);
+
+    outline:none;
+}
+
