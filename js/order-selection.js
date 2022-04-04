@@ -1,6 +1,6 @@
-console.log('JS IS CONNECTED')
+console.log("JS IS CONNECTED");
 
-// RANGE SLIDER/ "HOW MANY CHARACTER YOU WANT" 
+// RANGE SLIDER/ "HOW MANY CHARACTER YOU WANT"
 
 const slider = document.getElementById("myRange");
 const output = document.getElementById("character-number");
@@ -11,21 +11,43 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function () {
   output.innerHTML = this.value;
 
-  console.log(output)
-}
+  console.log(output);
+};
 
-//------------------------------------------
+// ALL THE BUTTON OF THE STYLE QUESTION
 
+/*
 
+const artstyleBtn = document.querySelectorAll(".artstyle-button");
 
-const artstyleBtn = document.querySelectorAll(".artstyle-button")
+artstyleBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.classList.contains("highlight-button")) {
+      button.classList.remove("highlight-button");
+    } else button.classList.add("highlight-button");
 
-
-artstyleBtn[0].addEventListener("click", () => {
-  if (artstyleBtn[0].classList.contains("highlight-button")) {
-    artstyleBtn[0].classList.remove("highlight-button");
-  } else artstyleBtn[0].classList.add("highlight-button");
-  console.log("button was clicked");
+    console.log("button was clicked");
+  });
 });
 
-//Works only for Heavy painting...
+*/
+
+// ALL THE BUTTON OF THE SHOT QUESTION
+
+const shotBtn = document.querySelectorAll(".shot-button");
+
+shotBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.classList.contains("highlight-button")) {
+      button.classList.remove("highlight-button");
+    } else button.classList.add("highlight-button");
+
+    console.log("button was clicked");
+  });
+});
+
+/*
+if (button.classList.contains("highlight-button" && "active")) {
+  button.classList.add("disabled").button.classList.contains("");
+}
+*/

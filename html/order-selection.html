@@ -1,107 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayuridrawsthings's commission</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sayuridrawsthings's commission</title>
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!----STYLESHEETS-->
+    <link
+      rel="stylesheet"
+      href="/css/order-selection/mobile/header_order-selection.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/order-selection/mobile/main_order-selection.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/order-selection/mobile/footer_order-selection.css"
+    />
+    <!--FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/957416c230.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!--BOOTSTRAP-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <!----STYLESHEETS-->
-  <link rel="stylesheet" href="/css/order-selection/mobile/header_order-selection.css" />
-  <link rel="stylesheet" href="/css/order-selection/mobile/main_order-selection.css" />
-  <link rel="stylesheet" href="/css/order-selection/mobile/footer_order-selection.css" />
-  <!--FONTAWESOME-->
-  <script src="https://kit.fontawesome.com/957416c230.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-  <header>
-    <icon id="return-Button">
-      <i class="return-button-icon fa-solid fa-angle-left"></i>
-    </icon>
-  </header>
-  <main>
-    <!-- Estimated price on the Right-->
-    <div id="card-price">
-      estimated price range:
-      <p>100$-120$</p>
-    </div>
-
-    <!-- Main card -->
-    <section>
-      <div id="card-list">
-        <div id="artstyle-container" class="input-group">
-          <h3>Which artstyle do you want?</h3>
-          <div id="artstyle-button-container">
-            <!--HEAVY PAINTING-->
-            <button type="button" class="artstyle-button btn btn-outline active " data-toggle="button"
-              aria-pressed="false">Heavy painting</button>
-
-            <!--LIGHT PAINTING-->
-            <button type="button" class="artstyle-button btn btn-outline active" data-toggle="button" aria-pressed="false">Light
-              painting</button>
-
-            <!--LINEART-->
-            <button type="button" class="artstyle-button btn btn-outline" data-toggle="button"
-              aria-pressed="false">Lineart</button>
-
-            <!--COLORED SKETCH-->
-            <button type="button" class="artstyle-button btn btn-outline" data-toggle="button"
-              aria-pressed="false">Colored sketch</button>
-
-            <!--SKETCH-->
-            <button type="button" class="artstyle-button btn btn-outline" data-toggle="button"
-              aria-pressed="false">Sketch</button>
-          </div>
-        </div>
-
-        <div id="character-nb_container">
-          <h3>How many character(s)?</h3>
-          <div class="slidecontainer">
-            <p id="character-number"></p>
-            <input type="range" min="1" max="20" step="1" value="1" class="slider" id="myRange">
-
-
-          </div>
-        </div>
-
-        <div id="shot-container" class="input-group">
-          <h3>What kind of shot ?</h3>
-          <div id="shot-button-container">
-            <!--PORTRAIT-->
-            <button type="button" class="shot-button btn btn-outline" data-toggle="button"
-              aria-pressed="false">Portrait</button>
-
-            <!--HALF-BODY-->
-            <button type="button" class="shot-button btn btn-outline" data-toggle="button"
-              aria-pressed="false">Half-body</button>
-
-            <!--FULL-BODY-->
-            <button type="button" class="shot-button btn btn-outline" data-toggle="button"
-              aria-pressed="true">Full-body</button>
-
-          </div>
-        </div>
+  <body>
+    <header>
+      <icon id="return-Button">
+        <i class="return-button-icon fa-solid fa-angle-left"></i>
+      </icon>
+    </header>
+    <main>
+      <!-- Estimated price on the Right-->
+      <div id="card-price">
+        estimated price range:
+        <p>100$-120$</p>
       </div>
-    </section>
-  </main>
 
-  <footer></footer>
+      <!-- Main card -->
+      <section>
+        <div id="card-list">
+          <div id="artstyle-container">
+            <h3>Which artstyle do you want?</h3>
+            <div id="artstyle-button-container" class="btn-group">
+              <!--HEAVY PAINTING-->
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="radio1"
+                autocomplete="off"
+              />
+              <label
+                class="Heavy-painting-Btn artstyle-button btn btn-outline"
+                for="radio1"
+                >Heavy painting</label
+              >
 
-  <!--BOOTSTRAP-->>
+              <!--LIGHT PAINTING-->
 
-  <script src="/js/order-selection.js">
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="radio2"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="Light-painting-Btn artstyle-button btn btn-outline"
+                for="radio2"
+                >Light painting</label
+              >
 
-  </script>
+              <!--LINEART-->
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="radio3"
+                autocomplete="off"
+              />
+              <label
+                class="Lineart-Btn artstyle-button btn btn-outline"
+                for="radio3"
+                >Lineart</label
+              >
+              <!--COLORED SKETCH-->
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="radio4"
+                autocomplete="off"
+              />
+              <label
+                class="Colored-Sketch-Btn artstyle-button btn btn-outline"
+                for="radio4"
+                >Color Sketch</label
+              >
+              <!--SKETCH-->
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="radio5"
+                autocomplete="off"
+              />
+              <label
+                class="Sketch-Btn artstyle-button btn btn-outline"
+                for="radio5"
+              >
+                Sketch</label
+              >
+            </div>
+          </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
+          <div id="character-nb_container">
+            <h3>How many character(s)?</h3>
+            <div class="slidecontainer">
+              <p id="character-number"></p>
+              <input
+                type="range"
+                min="1"
+                max="20"
+                step="1"
+                value="1"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+          </div>
 
+          <div id="shot-container" class="input-group">
+            <h3>What kind of shot ?</h3>
+            <div id="shot-button-container">
+              <!--PORTRAIT-->
+              <button
+                type="button"
+                class="shot-button btn btn-outline"
+                data-toggle="button"
+                aria-pressed="false"
+              >
+                Portrait
+              </button>
+
+              <!--HALF-BODY-->
+              <button
+                type="button"
+                class="shot-button btn btn-outline"
+                data-toggle="button"
+                aria-pressed="false"
+              >
+                Half-body
+              </button>
+
+              <!--FULL-BODY-->
+              <button
+                type="button"
+                class="shot-button btn btn-outline"
+                data-toggle="button"
+                aria-pressed="true"
+              >
+                Full-body
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!--BOOTSTRAP-->>
+
+    <script src="/js/order-selection.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
