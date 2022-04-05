@@ -163,7 +163,7 @@ main {
     
 }
 
-.highlight-button:focus {
+.highlight-button:active {
     outline: none !important;
     
     box-shadow: 0 0 5px #27272731;

@@ -7,12 +7,9 @@
     <title>Sayuridrawsthings's commission</title>
 
     <!--BOOTSTRAP-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <!----STYLESHEETS-->
     <link
       rel="stylesheet"
@@ -51,77 +48,47 @@
         <div id="card-list">
           <div id="artstyle-container">
             <h3>Which artstyle do you want?</h3>
-            <div id="artstyle-button-container" class="btn-group">
+
+            <div
+              id="artstyle-button-container"
+              data-toggle="buttons"
+             
+              class="btn-group btn-group-toggle"
+            >
               <!--HEAVY PAINTING-->
-              <input
-                type="radio"
-                class="btn-check"
-                name="options"
-                id="radio1"
-                autocomplete="off"
-              />
-              <label
-                class="Heavy-painting-Btn artstyle-button btn btn-outline"
-                for="radio1"
-                >Heavy painting</label
-              >
-
+              <div  class="btn-group-toggle" data-toggle="buttons">
+                <label class="artstyle-button btn ">
+                  <input id="Heavy-Painting" class=""
+                  type="checkbox"  autocomplete="off" /> Heavy
+                  painting
+                </label>
+              </div>
               <!--LIGHT PAINTING-->
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="options"
-                id="radio2"
-                autocomplete="off"
-                checked
-              />
-              <label
-                class="Light-painting-Btn artstyle-button btn btn-outline"
-                for="radio2"
-                >Light painting</label
-              >
-
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="artstyle-button btn">
+                  <input id="Light-Painting" type="checkbox"  autocomplete="off" /> Light
+                  Painting
+                </label>
+              </div>
               <!--LINEART-->
-              <input
-                type="radio"
-                class="btn-check"
-                name="options"
-                id="radio3"
-                autocomplete="off"
-              />
-              <label
-                class="Lineart-Btn artstyle-button btn btn-outline"
-                for="radio3"
-                >Lineart</label
-              >
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="artstyle-button btn ">
+                  <input id="Lineart" type="checkbox"  autocomplete="off" /> Lineart
+                </label>
+              </div>
               <!--COLORED SKETCH-->
-              <input
-                type="radio"
-                class="btn-check"
-                name="options"
-                id="radio4"
-                autocomplete="off"
-              />
-              <label
-                class="Colored-Sketch-Btn artstyle-button btn btn-outline"
-                for="radio4"
-                >Color Sketch</label
-              >
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="artstyle-button btn ">
+                  <input id="Color-sketch" type="checkbox"  autocomplete="off" /> Color
+                  sketch
+                </label>
+              </div>
               <!--SKETCH-->
-              <input
-                type="radio"
-                class="btn-check"
-                name="options"
-                id="radio5"
-                autocomplete="off"
-              />
-              <label
-                class="Sketch-Btn artstyle-button btn btn-outline"
-                for="radio5"
-              >
-                Sketch</label
-              >
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label  class="artstyle-button btn  ">
+                  <input id="Sketch" type="checkbox"  autocomplete="off" /> Sketch
+                </label>
+              </div>
             </div>
           </div>
 
@@ -141,38 +108,33 @@
             </div>
           </div>
 
-          <div id="shot-container" class="input-group">
+          <div id="shot-container">
             <h3>What kind of shot ?</h3>
-            <div id="shot-button-container">
+            <div id="shot-button-container" class="btn-group btn-group-toggle">
+             
               <!--PORTRAIT-->
-              <button
-                type="button"
-                class="shot-button btn btn-outline"
-                data-toggle="button"
-                aria-pressed="false"
-              >
-                Portrait
-              </button>
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="shot-button btn  active">
+                  <input type="checkbox"  autocomplete="off" /> Portrait
+                </label>
+              </div>
+             
 
               <!--HALF-BODY-->
-              <button
-                type="button"
-                class="shot-button btn btn-outline"
-                data-toggle="button"
-                aria-pressed="false"
-              >
-                Half-body
-              </button>
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="shot-button btn  active">
+                  <input type="checkbox"  autocomplete="off" /> Half-Body
+                </label>
+              </div>
+             
 
               <!--FULL-BODY-->
-              <button
-                type="button"
-                class="shot-button btn btn-outline"
-                data-toggle="button"
-                aria-pressed="true"
-              >
-                Full-body
-              </button>
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="shot-button btn  active">
+                  <input type="checkbox"  autocomplete="off" /> Full-body
+                </label>
+              </div>
+
             </div>
           </div>
         </div>
@@ -185,10 +147,10 @@
 
     <script src="/js/order-selection.js"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     ></script>
   </body>
 </html>

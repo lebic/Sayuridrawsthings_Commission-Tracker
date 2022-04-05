@@ -16,21 +16,25 @@ slider.oninput = function () {
 
 // ALL THE BUTTON OF THE STYLE QUESTION
 
-/*
-
 const artstyleBtn = document.querySelectorAll(".artstyle-button");
+
+const HeavyPaintingBtn = document.getElementById("Heavy-Painting");
+const LightPaintingBtn = document.getElementById("Light-Painting");
+const LineartBtn = document.getElementById("Lineart");
+const ColorSketchBtn = document.getElementById("Color-sketch");
+const SketchBtn = document.getElementById("Sketch");
 
 artstyleBtn.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.classList.contains("highlight-button")) {
       button.classList.remove("highlight-button");
+      button.attributes.remove("disabled");
     } else button.classList.add("highlight-button");
+    button.attributes.add("disable");
 
     console.log("button was clicked");
   });
 });
-
-*/
 
 // ALL THE BUTTON OF THE SHOT QUESTION
 
