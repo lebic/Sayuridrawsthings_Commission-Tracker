@@ -1,156 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sayuridrawsthings's commission</title>
 
-    <!--BOOTSTRAP-->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!----STYLESHEETS-->
-    <link
-      rel="stylesheet"
-      href="/css/order-selection/mobile/header_order-selection.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/order-selection/mobile/main_order-selection.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/order-selection/mobile/footer_order-selection.css"
-    />
-    <!--FONTAWESOME-->
-    <script
-      src="https://kit.fontawesome.com/957416c230.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayuridrawsthings's commission</title>
 
-  <body>
-    <header>
-      <icon id="return-Button">
-        <i class="return-button-icon fa-solid fa-angle-left"></i>
-      </icon>
-    </header>
-    <main>
-      <!-- Estimated price on the Right-->
-      <div id="card-price">
-        estimated price range:
-        <p>100$-120$</p>
-      </div>
+  <!--BOOTSTRAP-->
 
-      <!-- Main card -->
-      <section>
-        <div id="card-list">
-          <div id="artstyle-container">
-            <h3>Which artstyle do you want?</h3>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-            <div
-              id="artstyle-button-container"
-              data-toggle="buttons"
-             
-              class="btn-group btn-group-toggle"
-            >
-              <!--HEAVY PAINTING-->
-              <div  class="btn-group-toggle" data-toggle="buttons">
-                <label class="artstyle-button btn ">
-                  <input id="Heavy-Painting" class=""
-                  type="checkbox"  autocomplete="off" /> Heavy
-                  painting
-                </label>
-              </div>
-              <!--LIGHT PAINTING-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="artstyle-button btn">
-                  <input id="Light-Painting" type="checkbox"  autocomplete="off" /> Light
-                  Painting
-                </label>
-              </div>
-              <!--LINEART-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="artstyle-button btn ">
-                  <input id="Lineart" type="checkbox"  autocomplete="off" /> Lineart
-                </label>
-              </div>
-              <!--COLORED SKETCH-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="artstyle-button btn ">
-                  <input id="Color-sketch" type="checkbox"  autocomplete="off" /> Color
-                  sketch
-                </label>
-              </div>
-              <!--SKETCH-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label  class="artstyle-button btn  ">
-                  <input id="Sketch" type="checkbox"  autocomplete="off" /> Sketch
-                </label>
-              </div>
-            </div>
+  <!----STYLESHEETS-->
+  <link rel="stylesheet" href="../css/order-selection/mobile/header_order-selection.css" />
+  <link rel="stylesheet" href="../css/order-selection/mobile/main_order-selection.css" />
+  <link rel="stylesheet" href="../css/order-selection/mobile/footer_order-selection.css" />
+  <!--FONTAWESOME-->
+  <script src="https://kit.fontawesome.com/957416c230.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <icon id="return-Button">
+      <i class="return-button-icon fa-solid fa-angle-left"></i>
+    </icon>
+  </header>
+  <main>
+    <!-- Estimated price on the Right-->
+    <div id="card-price">
+      estimated price range:
+      <p>100$-120$</p>
+    </div>
+
+    <!-- Main card -->
+
+
+    <div id="card-list">
+
+      <!-----------------------ARTSTYLE ----------------------------->
+
+      <div id="artstyle-container">
+        <h3>Which artstyle do you want?</h3>
+
+        <div id="artstyle-button-container" data-toggle="buttons" class="btn-group btn-group-toggle">
+          <!--HEAVY PAINTING-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="artstyle-button btn ">
+              <input id="Heavy-Painting" class="" type="checkbox" autocomplete="off" /> Heavy
+              painting
+            </label>
           </div>
-
-          <div id="character-nb_container">
-            <h3>How many character(s)?</h3>
-            <div class="slidecontainer">
-              <p id="character-number"></p>
-              <input
-                type="range"
-                min="1"
-                max="20"
-                step="1"
-                value="1"
-                class="slider"
-                id="myRange"
-              />
-            </div>
+          <!--LIGHT PAINTING-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="artstyle-button btn">
+              <input id="Light-Painting" type="checkbox" autocomplete="off" /> Light
+              Painting
+            </label>
           </div>
-
-          <div id="shot-container">
-            <h3>What kind of shot ?</h3>
-            <div id="shot-button-container" class="btn-group btn-group-toggle">
-             
-              <!--PORTRAIT-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="shot-button btn  active">
-                  <input type="checkbox"  autocomplete="off" /> Portrait
-                </label>
-              </div>
-             
-
-              <!--HALF-BODY-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="shot-button btn  active">
-                  <input type="checkbox"  autocomplete="off" /> Half-Body
-                </label>
-              </div>
-             
-
-              <!--FULL-BODY-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="shot-button btn  active">
-                  <input type="checkbox"  autocomplete="off" /> Full-body
-                </label>
-              </div>
-
-            </div>
+          <!--LINEART-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="artstyle-button btn ">
+              <input id="Lineart" type="checkbox" autocomplete="off" /> Lineart
+            </label>
+          </div>
+          <!--COLORED SKETCH-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="artstyle-button btn ">
+              <input id="Color-sketch" type="checkbox" autocomplete="off" /> Color
+              sketch
+            </label>
+          </div>
+          <!--SKETCH-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="artstyle-button btn  ">
+              <input id="Sketch" type="checkbox" autocomplete="off" /> Sketch
+            </label>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer></footer>
 
-    <!--BOOTSTRAP-->>
 
-    <script src="/js/order-selection.js"></script>
+      <!-----------------------SLIDER ----------------------------->
 
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    ></script>
-  </body>
+      <div id="character-nb_container">
+        <h3>How many character(s)?</h3>
+        <div class="slidecontainer">
+          <p id="character-number"></p>
+          <input type="range" min="1" max="20" step="1" value="1" class="slider" id="myRange" />
+        </div>
+      </div>
+
+      <!-----------------------KIND OF SHOT ----------------------------->
+      <div id="shot-container">
+        <h3>What kind of shot ?</h3>
+        <div id="shot-button-container" class="btn-group btn-group-toggle">
+
+          <!--PORTRAIT-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="shot-button btn  active">
+              <input type="checkbox" autocomplete="off" /> Portrait
+            </label>
+          </div>
+
+
+          <!--HALF-BODY-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="shot-button btn  active">
+              <input type="checkbox" autocomplete="off" /> Half-Body
+            </label>
+          </div>
+
+
+          <!--FULL-BODY-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="shot-button btn  active">
+              <input type="checkbox" autocomplete="off" /> Full-body
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+      <!-----------------------REFERENCE ----------------------------->
+      <div id="reference-container">
+        <h3>Reference of your character(s)?
+        </h3>
+        <sub-title>(pictures and text descriptions)</sub-title>
+        <div id="references-textarea" class="form-group">
+          <label for="form-control"></label>
+          <textarea class="form-control" rows="7"></textarea>
+
+          <div id="upload-button-container">
+            <div>
+
+              <label id="upload-button" for="actual-btn"> add picture(s)</label>
+              <input type="file" multiple="multiple" id="actual-btn" hidden />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-----------------------BACKGROUND----------------------------->
+
+      <div id="background-container">
+        <h3>What kind of background ?</h3>
+        <div id="background-button-container" class="btn-group btn-group-toggle">
+
+          <!--FLAT/GRADIENT COLOR-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="background-button btn">
+              <input type="checkbox" autocomplete="off" /> Flat/Gradient color
+            </label>
+          </div>
+
+
+          <!--SIMPLE BACKGROUND-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="background-button btn  ">
+              <input type="checkbox" autocomplete="off" /> Simple background
+            </label>
+          </div>
+
+
+          <!--COMPLEX BACKGROUND-->
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="background-button btn  ">
+              <input type="checkbox" autocomplete="off" /> Complex background
+            </label>
+          </div>
+
+
+          <!-----------------------EXTRAS----------------------------->
+
+
+
+        </div>
+
+        <div id="extras-container">
+          <h3>Do you need more extras? ?</h3>
+          <div id="extras-button-container" class="btn-group btn-group-toggle">
+
+            <!--COMMERCIAL USE-->
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="extra-button btn">
+                <input type="checkbox" autocomplete="off" /> Commercial use
+              </label>
+            </div>
+
+
+            <!--COMPLEX DESIGN-->
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="extra-button btn  ">
+                <input type="checkbox" autocomplete="off" /> Complex design
+              </label>
+            </div>
+
+
+            <!--POV BUBBLESHOT-->
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="extra-button btn  ">
+                <input type="checkbox" autocomplete="off" /> POV Bubbleshot
+              </label>
+
+              <!--CHARACTER RESEARCH-->
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="extra-button btn  ">
+                  <input type="checkbox" autocomplete="off" /> Character research (5)
+                </label>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="summary">
+      <h2> summary</h1>
+
+    </div>
+
+
+
+
+  </main>
+
+  <footer></footer>
+
+  <!--BOOTSTRAP-->>
+
+  <script src="../js/order-selection.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  ></script>
+</body>
+
 </html>

@@ -1,6 +1,6 @@
-:root{
-    --selectiongradient1:  #d133cc;
-    --selectiongradient2:#ffbafc;
+:root {
+    --selectiongradient1: #d133cc;
+    --selectiongradient2: #ffbafc;
     --fontcolor: #8f8f8fec;
     --fontcoloredbackground: white;
 }
@@ -8,13 +8,13 @@
 main {
     display: flex;
     flex-direction: column;
-   
+
     justify-content: flex-start;
     align-items: center;
 
     width: 100%;
-    height: 200vh;
-    background: url("/assets/images/Dojo.png");
+    height: 250vh;
+    background: url("/Sayuridrawsthings-commission/assets/images/Dojo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -35,15 +35,15 @@ main {
     padding: 1vh;
     padding-left: 2vh;
 
-    font-family: 'roboto',sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 1.4vh;
     font-variant: small-caps;
     font-weight: 300;
     line-height: 2.6vh;
-    
-    border-top-left-radius:2vh ;
-    border-bottom-left-radius:2vh ;
-    box-shadow:5px 5px 8px 3px rgba(0,0,0,0.14) ;
+
+    border-top-left-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+    box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.14);
 
     width: 40%;
     height: 7.5vh;
@@ -53,11 +53,11 @@ main {
 }
 
 #card-price p {
-    font-family: 'roboto',sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 2.5vh;
     font-variant: small-caps;
     font-weight: 500;
-    color:var(--selectiongradient1);
+    color: var(--selectiongradient1);
 }
 
 
@@ -65,42 +65,78 @@ main {
 
 
 
-#card-list{
+#card-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-    position:relative;
+
+    position: relative;
     top: 6vh;
 
     margin-top: 5vh;
 
-    padding-top: 5vh ;
-    padding-inline: 2vh ;
+    padding-top: 5vh;
+    padding-inline: 2vh;
 
     border-radius: 1.2vh;
 
-    width:40vh;
-    height: 60vh;
-    
+    width: 40vh;
+    height: fit-content;
+
     outline: none;
     background-color: white;
 }
 
-/*------ ARTSYLE QUESTION-----------*/
-
- h3{
+/* -------------QUESTION------------*/
+h3 {
     display: flex;
 
     margin-left: 1vh;
-   
-    font-family:'roboto',sans-serif;
+
+    font-family: 'roboto', sans-serif;
     font-size: 1.7vh;
     font-weight: 380;
-    color:var(--fontcolor) ;
-    
+    color: var(--fontcolor);
+
 }
-#artstyle-container{
+
+sub-title {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1vh;
+    margin-top: 0.5vh;
+
+    font-family: 'roboto', sans-serif;
+    font-size: 1.6vh;
+    font-weight: 380;
+    line-height: 1vh;
+    color: var(--fontcolor);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------ ARTSYLE QUESTION-----------*/
+
+
+#artstyle-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -119,11 +155,11 @@ main {
     outline: none;
 }
 
-/* BUTTON STYLE FOR ALL SELECTION TYPE QUESTIONS*/
+/* SMALL BUTTON STYLE FOR THE 2 FIRST SELECTION TYPE QUESTIONS*/
 
 
 .artstyle-button {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,51 +169,69 @@ main {
 
     margin: 1vh;
 
-    font-family:'roboto',sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 1.5vh;
-    color:var(--fontcolor) ;
-   
-    border-radius: 2vh ;
+    color: var(--fontcolor);
+
+    border-radius: 2vh;
     border-color: var(--fontcolor);
 
-    outline:none;
+    outline: none;
 }
 
 
 /* Clicked state */
 
-.highlight-button { 
+.highlight-button {
     outline: none !important;
-    
+
     box-shadow: 0 0 5px #27272731 !important;
 
-    color:white !important;
+    color: white !important;
 
-    background: linear-gradient(0.25turn,var(--selectiongradient2) ,var(--selectiongradient1));
+    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
 
 
     border: solid;
-    border-radius: 2vh ;
+    border-radius: 2vh;
     border-width: 0.2vh;
     border-color: var(--selectiongradient1);
-    
+
 }
 
 .highlight-button:active {
     outline: none !important;
-    
+
     box-shadow: 0 0 5px #27272731;
 
-    color:white ;
+    color: white;
 
-    background: linear-gradient(0.25turn,var(--selectiongradient2) ,var(--selectiongradient1));
+    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
 
 
     border: solid;
-    border-radius: 2vh ;
+    border-radius: 2vh;
     border-width: 0.2vh;
     border-color: var(--selectiongradient1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -205,14 +259,15 @@ main {
     flex-direction: row-reverse;
     align-content: center;
     justify-content: space-evenly;
-    width: 100%; /* Width of the outside container */
-  }
+    width: 100%;
+    /* Width of the outside container */
+}
 
-#character-number{
+#character-number {
     display: flex;
 
     margin: 0px;
-    
+
     align-items: center;
     justify-content: center;
 
@@ -224,15 +279,16 @@ main {
     width: 4vh;
     height: 4vh;
     background: white;
-    
+
 
 }
 
 
-  
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
     appearance: none;
 
     display: flex;
@@ -241,39 +297,55 @@ main {
     padding: 4px;
     margin: 1vh;
 
-    width: 30vh; /* Full-width */
-    height: 3vh; /* Specified height */
-    background: linear-gradient(0.25turn,var(--selectiongradient2) ,var(--selectiongradient1)); /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    width: 30vh;
+    /* Full-width */
+    height: 3vh;
+    /* Specified height */
+    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
     border-radius: 1.9vh;
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
     transition: opacity .2s;
-  }
- 
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+}
+
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
     appearance: none;
     border-radius: 50%;
-    width: 15px; /* Set a specific slider handle width */
-    height: 15px; /* Slider handle height */
-    background: white; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 30px; /* Set a specific slider handle width */
-    height: 30px; /* Slider handle height */
-    background: rgb(255, 255, 255); /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+    width: 15px;
+    /* Set a specific slider handle width */
+    height: 15px;
+    /* Slider handle height */
+    background: white;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 30px;
+    /* Set a specific slider handle width */
+    height: 30px;
+    /* Slider handle height */
+    background: rgb(255, 255, 255);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
 
 
 
@@ -286,23 +358,23 @@ main {
 
 
 
-  /*------------- KIND OF SHOT QUESTION---------------*/
-  #shot-container {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      margin-top: 3vh;
-  }
-  
-  #shot-button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+/*------------- KIND OF SHOT QUESTION---------------*/
+#shot-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
 
-  }
+#shot-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  .shot-button {
+}
+
+.shot-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,13 +384,285 @@ main {
 
     margin: 1vh;
 
-    font-family:'roboto',sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 1.5vh;
-    color:var(--fontcolor) ;
-   
-    border-radius: 2vh ;
+    color: var(--fontcolor);
+
+    border-radius: 2vh;
     border-color: var(--fontcolor);
 
-    outline:none;
+    outline: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------REFERENCE QUESTION----------------*/
+
+#reference-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 3vh;
+    width: 100%;
+
+}
+
+#references-textarea {
+    display: flex;
+    flex-direction: column;
+
+    justify-self: center;
+
+    margin: 1vh;
+    margin-left: 1vh;
+    margin-top: 2.5vh;
+    width: 97%;
+}
+
+
+
+
+/*UPLOAD BUTTON*/
+
+#upload-button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+
+
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5vh;
+    color: var(--fontcolor);
+
+    border-radius: 2vh;
+    border-color: var(--fontcolor);
+
+
+
+
+    outline: none;
+    z-index: 1;
+}
+
+#upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    text-transform: uppercase;
+    font-size: 1vh;
+
+    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
+    width: 10vh;
+    height: 3vh;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------BACKGROUND QUESTION----------------*/
+
+#background-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    width: 100%;
+}
+
+#background-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 20vh;
+}
+
+.background-button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20vh;
+    height: 4vh;
+
+    margin: 1vh;
+
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5vh;
+    color: var(--fontcolor);
+
+    border-radius: 2vh;
+    border-color: var(--fontcolor);
+
+    outline: none;
+}
+
+
+/* Clicked state */
+
+.background-clicked-button {
+    outline: none !important;
+
+    box-shadow: 0 0 5px #27272731 !important;
+
+    color: white !important;
+
+    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
+
+
+    border: solid;
+    border-radius: 2vh;
+    border-width: 0.2vh;
+    border-color: var(--selectiongradient1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------'EXTRAS' QUESTION----------------*/
+
+#extras-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 5vh;
+    width: 100%;
+}
+
+#extras-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+
+    height: 20vh;
+}
+
+.extra-button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20vh;
+    height: 4vh;
+
+    margin: 1vh;
+
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5vh;
+    color: var(--fontcolor);
+
+    border-radius: 2vh;
+    border-color: var(--fontcolor);
+
+    outline: none;
+}
+
+
+/* Clicked state */
+
+.extra-clicked-button {
+    outline: none !important;
+
+    box-shadow: 0 0 5px #27272731 !important;
+
+    color: white !important;
+
+    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
+
+
+    border: solid;
+    border-radius: 2vh;
+    border-width: 0.2vh;
+    border-color: var(--selectiongradient1);
+
+}
+
+
+
+
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    top: 6vh;
+
+    margin-top: 5vh;
+
+    padding-top: 5vh;
+    padding-inline: 2vh;
+
+    border-radius: 1.2vh;
+
+    width: 40vh;
+    height: fit-content;
+
+    outline: none;
+    background-color: white;
+}
+
+#summary h2 {
+    text-transform: uppercase ;
+    font-family: 'roboto',sans-serif;
+    font-weight: 600;
+}
