@@ -7,17 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sayuridrawsthings's commission</title>
 
-  <!--BOOTSTRAP-->
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!----STYLESHEETS-->
   <link rel="stylesheet" href="../css/order-selection/mobile/header_order-selection.css" />
   <link rel="stylesheet" href="../css/order-selection/mobile/main_order-selection.css" />
   <link rel="stylesheet" href="../css/order-selection/mobile/footer_order-selection.css" />
+
   <!--FONTAWESOME-->
   <script src="https://kit.fontawesome.com/957416c230.js" crossorigin="anonymous"></script>
+
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
 </head>
 
 <body>
@@ -40,44 +42,44 @@
 
       <!-----------------------ARTSTYLE ----------------------------->
 
+
       <div id="artstyle-container">
         <h3>Which artstyle do you want?</h3>
 
-        <div id="artstyle-button-container" data-toggle="buttons" class="btn-group btn-group-toggle">
+        <form id="artstyle-button-container">
           <!--HEAVY PAINTING-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="artstyle-button btn ">
-              <input id="Heavy-Painting" class="" type="checkbox" autocomplete="off" /> Heavy
-              painting
-            </label>
-          </div>
+          <input id="Heavy-Painting" type="radio" value="Heavy-Painting" name="option1" hidden />
+          <label for="Heavy-Painting" class="Heavy-Painting artstyle-button btn"> Heavy
+            painting
+
+          </label>
+
           <!--LIGHT PAINTING-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="artstyle-button btn">
-              <input id="Light-Painting" type="checkbox" autocomplete="off" /> Light
-              Painting
-            </label>
-          </div>
+          <input id="Light-Painting" type="radio" value="Light-Painting" name="option1" hidden />
+          <label for="Light-Painting" class="Light-Painting artstyle-button btn"> Light
+            Painting
+
+          </label>
+
           <!--LINEART-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="artstyle-button btn ">
-              <input id="Lineart" type="checkbox" autocomplete="off" /> Lineart
-            </label>
-          </div>
+          <input id="Lineart" type="radio" value="Lineart" name="option1" hidden />
+          <label for="Lineart" class="Lineart artstyle-button btn">
+            Lineart
+          </label>
+
+
           <!--COLORED SKETCH-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="artstyle-button btn ">
-              <input id="Color-sketch" type="checkbox" autocomplete="off" /> Color
-              sketch
-            </label>
-          </div>
+          <input id="Color-sketch" type="radio" value="Color-sketch" name="option1" hidden />
+          <label for="Color-sketch" class="Color-sketch artstyle-button btn">
+            Color sketch </label>
+
           <!--SKETCH-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="artstyle-button btn  ">
-              <input id="Sketch" type="checkbox" autocomplete="off" /> Sketch
-            </label>
-          </div>
-        </div>
+          <input id="Sketch" type="radio" value="Sketch" name="option1" hidden />
+          <label for="Sketch" class="Sketch artstyle-button btn">
+            Sketch
+          </label>
+
+        </form>
       </div>
 
 
@@ -92,33 +94,27 @@
         </div>
       </div>
 
+
+
       <!-----------------------KIND OF SHOT ----------------------------->
       <div id="shot-container">
         <h3>What kind of shot ?</h3>
-        <div id="shot-button-container" class="btn-group btn-group-toggle">
+        <div id="shot-button-container">
 
           <!--PORTRAIT-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="shot-button btn  active">
-              <input type="checkbox" autocomplete="off" /> Portrait
-            </label>
-          </div>
-
+          <input id="Portrait" type="radio" value=Portrait" name="option2" hidden />
+          <label for="Portrait" class="shot-button btn "> Portrait
+          </label>
 
           <!--HALF-BODY-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="shot-button btn  active">
-              <input type="checkbox" autocomplete="off" /> Half-Body
-            </label>
-          </div>
-
+          <input id="Half-Body" type="radio" value="Half-Body" name="option2" hidden />
+          <label for="Half-Body" class="shot-button btn">Half-Body </label>
 
           <!--FULL-BODY-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="shot-button btn  active">
-              <input type="checkbox" autocomplete="off" /> Full-body
-            </label>
-          </div>
+          <input id="Full-body" type="radio" value="Full-body" name="option2" hidden />
+          <label for="Full-body" class="shot-button btn"> Full-body </label>
+
+
 
         </div>
       </div>
@@ -147,30 +143,27 @@
 
       <div id="background-container">
         <h3>What kind of background ?</h3>
-        <div id="background-button-container" class="btn-group btn-group-toggle">
+        <div id="background-button-container">
 
           <!--FLAT/GRADIENT COLOR-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="background-button btn">
-              <input type="checkbox" autocomplete="off" /> Flat/Gradient color
-            </label>
-          </div>
+          <input id="FlatGradientColor" type="radio" value="Flat/Gradient color" name="option3" hidden />
+          <label for="FlatGradientColor" class="background-button btn"> Flat/Gradient color </label>
+
+
 
 
           <!--SIMPLE BACKGROUND-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="background-button btn  ">
-              <input type="checkbox" autocomplete="off" /> Simple background
-            </label>
-          </div>
+          <input id="SimpleBackground" type="radio" value="Simple background" name="option3" hidden />
+          <label for="SimpleBackground" class="background-button btn"> Simple background </label>
+
+
 
 
           <!--COMPLEX BACKGROUND-->
-          <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="background-button btn  ">
-              <input type="checkbox" autocomplete="off" /> Complex background
-            </label>
-          </div>
+          <input id="ComplexBackground" type="radio" value="Complex background" name="option3" hidden />
+          <label for="ComplexBackground" class="background-button btn"> Complex background </label>
+
+
 
 
           <!-----------------------EXTRAS----------------------------->
@@ -181,47 +174,77 @@
 
         <div id="extras-container">
           <h3>Do you need more extras? ?</h3>
-          <div id="extras-button-container" class="btn-group btn-group-toggle">
+          <div id="extras-button-container">
 
             <!--COMMERCIAL USE-->
-            <div class="btn-group-toggle" data-toggle="buttons">
-              <label class="extra-button btn">
-                <input type="checkbox" autocomplete="off" /> Commercial use
-              </label>
-            </div>
+            <input id="CommercialUse" type="radio" value="Commercial use" name="option4" hidden />
+            <label for="CommercialUse" class="extra-button btn"> Commercial use </label>
+
+
 
 
             <!--COMPLEX DESIGN-->
-            <div class="btn-group-toggle" data-toggle="buttons">
-              <label class="extra-button btn  ">
-                <input type="checkbox" autocomplete="off" /> Complex design
-              </label>
-            </div>
+
+            <input id="ComplexDesign" type="radio" value="Complex design" name="option4" hidden />
+            <label for="ComplexDesign" class="extra-button btn"> Complex design </label>
+
 
 
             <!--POV BUBBLESHOT-->
-            <div class="btn-group-toggle" data-toggle="buttons">
-              <label class="extra-button btn  ">
-                <input type="checkbox" autocomplete="off" /> POV Bubbleshot
-              </label>
-
-              <!--CHARACTER RESEARCH-->
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="extra-button btn  ">
-                  <input type="checkbox" autocomplete="off" /> Character research (5)
-                </label>
-              </div>
+            <input id="PovBubbleshot" type="radio" value="POV Bubbleshot" name="option4" hidden />
+            <label for="PovBubbleshot" class="extra-button btn"> POV Bubbleshot </label>
 
 
-            </div>
+            <!--CHARACTER RESEARCH-->
+            <input id="CharacterResearch" type="radio" value="Character research (5)" name="option4" hidden />
+            <label for="CharacterResearch" class="extra-button btn"> Character research (5) </label>
+
 
           </div>
         </div>
       </div>
     </div>
 
-    <div id="summary">
-      <h2> summary</h1>
+
+
+    <div id="summary-container">
+      <h2> summary</h2>
+      <div id="summary-text-container">
+        <div class="summary-text">
+          <h3> Style : </h3>
+          <p> Heavy painting</p>
+        </div>
+        <div class="summary-text">
+          <h3> Number of Character(s) : </h3>
+          <p>test</p>
+        </div>
+        <div class="summary-text">
+          <h3> Type of shot : </h3>
+          <p> test </p>
+        </div>
+        <div class="summary-text">
+          <h3> Description : </h3>
+          <p>test</p>
+        </div>
+        <div class="summary-text">
+          <h3> Type of background : </h3>
+          <p>test</p>
+        </div>
+        <div class="summary-text">
+          <h3> Extra(s) : </h3>
+          <p>test</p>
+        </div>
+
+        <div id="totalcontainer">
+          <p>TOTAL </p>
+          <price> 300$</price>
+
+        </div>
+      </div>
+
+
+      <input id="submit-btn" type="radio" value="submit" name="option4" hidden />
+      <label for="submit-btn" class="submit-button btn"> submit your order </label>
 
     </div>
 
@@ -232,21 +255,11 @@
 
   <footer></footer>
 
-  <!--BOOTSTRAP-->>
 
-  <script src="../js/order-selection.js"></script>
+  <!--JQuery-->
+  <script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  ></script>
+  <script src="/Sayuridrawsthings-commission/js/order-selection.js"></script>
 </body>
 
 </html>

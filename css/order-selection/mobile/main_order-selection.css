@@ -1,9 +1,11 @@
 :root {
     --selectiongradient1: #d133cc;
     --selectiongradient2: #ffbafc;
-    --fontcolor: #8f8f8fec;
+    --fontcolor: #a3a3a3;
+    --QuestionTitlecolor: #666666ec;
     --fontcoloredbackground: white;
 }
+
 
 main {
     display: flex;
@@ -19,6 +21,9 @@ main {
     background-size: cover;
     background-attachment: fixed;
 }
+
+
+/*------------  CARD ESTIMATED PRICE-----------*/
 
 #card-price {
     display: flex;
@@ -46,7 +51,7 @@ main {
     box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.14);
 
     width: 40%;
-    height: 7.5vh;
+    height: fit-content;
     background-color: white;
 
     z-index: 2;
@@ -61,7 +66,7 @@ main {
 }
 
 
-/*------------------MAIN CARD ELEMENT*----------------*/
+/*------------MAIN CARD ELEMENT*----------------*/
 
 
 
@@ -74,6 +79,7 @@ main {
     top: 6vh;
 
     margin-top: 5vh;
+
 
     padding-top: 5vh;
     padding-inline: 2vh;
@@ -88,6 +94,7 @@ main {
 }
 
 /* -------------QUESTION------------*/
+
 h3 {
     display: flex;
 
@@ -95,23 +102,86 @@ h3 {
 
     font-family: 'roboto', sans-serif;
     font-size: 1.7vh;
-    font-weight: 380;
-    color: var(--fontcolor);
+    font-weight: 350;
+    color: var(--QuestionTitlecolor);
 
 }
+
+/* -------------SUBQUESTION------------*/
 
 sub-title {
     display: flex;
     flex-direction: column;
 
-    margin-left: 1vh;
     margin-top: 0.5vh;
+    margin-left: 1vh;
 
     font-family: 'roboto', sans-serif;
     font-size: 1.6vh;
-    font-weight: 380;
+    font-weight: 350;
     line-height: 1vh;
+    color: var(--QuestionTitlecolor);
+
+}
+
+
+/*--------------Buttons----------------*/
+
+
+/*Main style*/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3.5vh;
+    margin: 1vh;
+
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+    font-stretch: extra-expanded;
+    font-size: 1.5vh;
+
     color: var(--fontcolor);
+
+    border: solid;
+    border-width: 0.19vh;
+    border-radius: 2vh;
+    border-color: var(--fontcolor);
+
+}
+
+.artstyle-button {
+
+    width: 14vh;
+}
+
+.shot-button {
+    width: 16vh;
+
+}
+
+.background-button {
+    width: 20vh;
+
+}
+
+.extra-button {
+
+    width: 20vh;
+}
+
+.submit-button {
+    width: 25vh;
+    text-transform: uppercase;
+}
+
+
+input[type=radio]:checked+label {
+    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
+    border-color: #d133cc;
+    color: white;
 
 }
 
@@ -119,21 +189,7 @@ sub-title {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------ ARTSYLE QUESTION-----------*/
+/*------ ARTSTYLE QUESTION-----------*/
 
 
 #artstyle-container {
@@ -141,88 +197,21 @@ sub-title {
     justify-content: center;
     flex-direction: column;
 
+
 }
 
 #artstyle-button-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
 
+    margin-top: 1.5vh;
     width: 36vh;
     height: 19vh;
     outline: none;
 }
-
-/* SMALL BUTTON STYLE FOR THE 2 FIRST SELECTION TYPE QUESTIONS*/
-
-
-.artstyle-button {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 16vh;
-    height: 4vh;
-
-    margin: 1vh;
-
-    font-family: 'roboto', sans-serif;
-    font-size: 1.5vh;
-    color: var(--fontcolor);
-
-    border-radius: 2vh;
-    border-color: var(--fontcolor);
-
-    outline: none;
-}
-
-
-/* Clicked state */
-
-.highlight-button {
-    outline: none !important;
-
-    box-shadow: 0 0 5px #27272731 !important;
-
-    color: white !important;
-
-    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
-
-
-    border: solid;
-    border-radius: 2vh;
-    border-width: 0.2vh;
-    border-color: var(--selectiongradient1);
-
-}
-
-.highlight-button:active {
-    outline: none !important;
-
-    box-shadow: 0 0 5px #27272731;
-
-    color: white;
-
-    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
-
-
-    border: solid;
-    border-radius: 2vh;
-    border-width: 0.2vh;
-    border-color: var(--selectiongradient1);
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -247,6 +236,11 @@ sub-title {
 
     margin-top: 3vh;
 
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+    font-stretch: extra-expanded;
+    font-size: 1.5vh;
+
     color: var(--fontcolor);
 
     height: 10vh;
@@ -260,22 +254,26 @@ sub-title {
     align-content: center;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 1.5vh;
     /* Width of the outside container */
 }
 
 #character-number {
     display: flex;
-
-    margin: 0px;
-
     align-items: center;
     justify-content: center;
 
+    margin: 1vh;
+
+
+
     color: var(--fontcolor);
+
     border: solid;
     border-width: 0.1vh;
     border-radius: 1vh;
     border-color: var(--fontcolor);
+
     width: 4vh;
     height: 4vh;
     background: white;
@@ -326,9 +324,9 @@ sub-title {
     /* Override default look */
     appearance: none;
     border-radius: 50%;
-    width: 15px;
+    width: 20px;
     /* Set a specific slider handle width */
-    height: 15px;
+    height: 20px;
     /* Slider handle height */
     background: white;
     /* Green background */
@@ -372,36 +370,9 @@ sub-title {
     flex-wrap: wrap;
     justify-content: center;
 
+    margin-top: 1.5vh;
+
 }
-
-.shot-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 16vh;
-    height: 4vh;
-
-    margin: 1vh;
-
-    font-family: 'roboto', sans-serif;
-    font-size: 1.5vh;
-    color: var(--fontcolor);
-
-    border-radius: 2vh;
-    border-color: var(--fontcolor);
-
-    outline: none;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -432,7 +403,7 @@ sub-title {
 
     margin: 1vh;
     margin-left: 1vh;
-    margin-top: 2.5vh;
+    margin-top: 1.5vh;
     width: 97%;
 }
 
@@ -515,47 +486,8 @@ sub-title {
     align-items: center;
 
     height: 20vh;
-}
 
-.background-button {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 20vh;
-    height: 4vh;
-
-    margin: 1vh;
-
-    font-family: 'roboto', sans-serif;
-    font-size: 1.5vh;
-    color: var(--fontcolor);
-
-    border-radius: 2vh;
-    border-color: var(--fontcolor);
-
-    outline: none;
-}
-
-
-/* Clicked state */
-
-.background-clicked-button {
-    outline: none !important;
-
-    box-shadow: 0 0 5px #27272731 !important;
-
-    color: white !important;
-
-    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
-
-
-    border: solid;
-    border-radius: 2vh;
-    border-width: 0.2vh;
-    border-color: var(--selectiongradient1);
-
+    margin-top: 1.5vh;
 }
 
 
@@ -579,7 +511,6 @@ sub-title {
     flex-direction: column;
     justify-content: center;
 
-    margin-bottom: 5vh;
     width: 100%;
 }
 
@@ -589,57 +520,26 @@ sub-title {
     justify-content: flex-start;
     align-items: center;
 
+    margin-top: 1.5vh;
+    margin-bottom: 5vh;
 
-
-    height: 20vh;
+    height: 25vh;
 }
 
-.extra-button {
 
-    display: flex;
-    justify-content: center;
+
+
+/*-------------SUMMARY----------------*/
+
+#summary-container h2 {
     align-items: center;
-
-    width: 20vh;
-    height: 4vh;
-
-    margin: 1vh;
-
+    text-transform: uppercase;
     font-family: 'roboto', sans-serif;
-    font-size: 1.5vh;
-    color: var(--fontcolor);
-
-    border-radius: 2vh;
-    border-color: var(--fontcolor);
-
-    outline: none;
+    font-size: 2.5vh;
+    font-weight: 600;
 }
 
-
-/* Clicked state */
-
-.extra-clicked-button {
-    outline: none !important;
-
-    box-shadow: 0 0 5px #27272731 !important;
-
-    color: white !important;
-
-    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
-
-
-    border: solid;
-    border-radius: 2vh;
-    border-width: 0.2vh;
-    border-color: var(--selectiongradient1);
-
-}
-
-
-
-
-
-#summary {
+#summary-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -649,7 +549,10 @@ sub-title {
 
     margin-top: 5vh;
 
-    padding-top: 5vh;
+
+
+    padding-top: 4vh;
+    padding-bottom: 5vh;
     padding-inline: 2vh;
 
     border-radius: 1.2vh;
@@ -661,8 +564,68 @@ sub-title {
     background-color: white;
 }
 
-#summary h2 {
-    text-transform: uppercase ;
-    font-family: 'roboto',sans-serif;
+#summary-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.summary-text {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+    line-height: 4vh;
+    width: 100%;
+}
+
+.summary-text p {
+    margin-inline: 1vh;
+    font-family: 'roboto', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+
+    color: var(--fontcolor);
+}
+
+
+#totalcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    margin-top: 3vh;
+    width: 100%;
+    height: 5vh;
+
+    border-top: solid var(--selectiongradient1);
+    border-width: 0.2vh;
+}
+
+#totalcontainer price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 3vh;
     font-weight: 600;
+    color: var(--selectiongradient1);
+}
+
+#totalcontainer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-inline: 1vh;
+    text-transform: uppercase;
+    font-family: 'roboto', sans-serif;
+    font-size: 3vh;
+    font-stretch: semi-expanded;
+    font-weight: 600;
+    color: var(--selectiongradient1);
 }
