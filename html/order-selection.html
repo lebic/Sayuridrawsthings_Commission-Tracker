@@ -1,265 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayuridrawsthings's commission</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sayuridrawsthings's commission</title>
+    <!----STYLESHEETS-->
+    <link
+      rel="stylesheet"
+      href="../css/order-selection/mobile/header_order-selection.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/order-selection/mobile/main_order-selection.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/order-selection/mobile/footer_order-selection.css"
+    />
 
+    <!--FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/957416c230.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!----STYLESHEETS-->
-  <link rel="stylesheet" href="../css/order-selection/mobile/header_order-selection.css" />
-  <link rel="stylesheet" href="../css/order-selection/mobile/main_order-selection.css" />
-  <link rel="stylesheet" href="../css/order-selection/mobile/footer_order-selection.css" />
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
 
-  <!--FONTAWESOME-->
-  <script src="https://kit.fontawesome.com/957416c230.js" crossorigin="anonymous"></script>
-
-  <!--JQUERY-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-</head>
-
-<body>
-  <header>
-    <icon id="return-Button">
-      <i class="return-button-icon fa-solid fa-angle-left"></i>
-    </icon>
-  </header>
-  <main>
-    <!-- Estimated price on the Right-->
-    <div id="card-price">
-      estimated price range:
-      <p>100$-120$</p>
-    </div>
-
-    <!-- Main card -->
-
-
-    <div id="card-list">
-
-      <!-----------------------ARTSTYLE ----------------------------->
-
-
-      <div id="artstyle-container">
-        <h3>Which artstyle do you want?</h3>
-
-        <form id="artstyle-button-container">
-          <!--HEAVY PAINTING-->
-          <input id="Heavy-Painting" type="radio" value="Heavy-Painting" name="option1" hidden />
-          <label for="Heavy-Painting" class="Heavy-Painting artstyle-button btn"> Heavy
-            painting
-
-          </label>
-
-          <!--LIGHT PAINTING-->
-          <input id="Light-Painting" type="radio" value="Light-Painting" name="option1" hidden />
-          <label for="Light-Painting" class="Light-Painting artstyle-button btn"> Light
-            Painting
-
-          </label>
-
-          <!--LINEART-->
-          <input id="Lineart" type="radio" value="Lineart" name="option1" hidden />
-          <label for="Lineart" class="Lineart artstyle-button btn">
-            Lineart
-          </label>
-
-
-          <!--COLORED SKETCH-->
-          <input id="Color-sketch" type="radio" value="Color-sketch" name="option1" hidden />
-          <label for="Color-sketch" class="Color-sketch artstyle-button btn">
-            Color sketch </label>
-
-          <!--SKETCH-->
-          <input id="Sketch" type="radio" value="Sketch" name="option1" hidden />
-          <label for="Sketch" class="Sketch artstyle-button btn">
-            Sketch
-          </label>
-
-        </form>
+  <body>
+    <header>
+      <icon id="return-Button">
+        <i class="return-button-icon fa-solid fa-angle-left"></i>
+      </icon>
+    </header>
+    <main>
+      <!-- Estimated price on the Right-->
+      <div id="card-price">
+        estimated price range:
+        <p>100$-120$</p>
       </div>
 
+      <!-- Main card -->
 
+      <div id="card-list">
+        <!-----------------------ARTSTYLE ----------------------------->
 
-      <!-----------------------SLIDER ----------------------------->
+        <div id="artstyle-container">
+          <h3>Which artstyle do you want?</h3>
 
-      <div id="character-nb_container">
-        <h3>How many character(s)?</h3>
-        <div class="slidecontainer">
-          <p id="character-number"></p>
-          <input type="range" min="1" max="20" step="1" value="1" class="slider" id="myRange" />
+          <form id="artstyle-button-container">
+            <!--HEAVY PAINTING-->
+            <input
+              id="Heavy-Painting"
+              type="radio"
+              value="100"
+              name="option1"
+              hidden
+            />
+            <label
+              for="Heavy-Painting"
+              class="Heavy-Painting artstyle-button btn"
+            >
+              Heavy painting
+            </label>
+
+            <!--LIGHT PAINTING-->
+            <input
+              id="Light-Painting"
+              type="radio"
+              value="80"
+              name="option1"
+              hidden
+            />
+            <label
+              for="Light-Painting"
+              class="Light-Painting artstyle-button btn"
+            >
+              Light Painting
+            </label>
+
+            <!--LINEART-->
+            <input id="Lineart" type="radio" value="60" name="option1" hidden />
+            <label for="Lineart" class="Lineart artstyle-button btn">
+              Lineart
+            </label>
+
+            <!--COLORED SKETCH-->
+            <input
+              id="Color-sketch"
+              type="radio"
+              value="40"
+              name="option1"
+              hidden
+            />
+            <label for="Color-sketch" class="Color-sketch artstyle-button btn">
+              Color sketch
+            </label>
+
+            <!--SKETCH-->
+            <input id="Sketch" type="radio" value="20" name="option1" hidden />
+            <label for="Sketch" class="Sketch artstyle-button btn">
+              Sketch
+            </label>
+          </form>
         </div>
-      </div>
 
+        <!-----------------------SLIDER ----------------------------->
 
-
-      <!-----------------------KIND OF SHOT ----------------------------->
-      <div id="shot-container">
-        <h3>What kind of shot ?</h3>
-        <div id="shot-button-container">
-
-          <!--PORTRAIT-->
-          <input id="Portrait" type="radio" value=Portrait" name="option2" hidden />
-          <label for="Portrait" class="shot-button btn "> Portrait
-          </label>
-
-          <!--HALF-BODY-->
-          <input id="Half-Body" type="radio" value="Half-Body" name="option2" hidden />
-          <label for="Half-Body" class="shot-button btn">Half-Body </label>
-
-          <!--FULL-BODY-->
-          <input id="Full-body" type="radio" value="Full-body" name="option2" hidden />
-          <label for="Full-body" class="shot-button btn"> Full-body </label>
-
-
-
+        <div id="character-nb_container">
+          <h3>How many character(s)?</h3>
+          <div class="slidecontainer">
+            <p id="character-number"></p>
+            <input
+              class="slider"
+              type="range"
+              min="1"
+              max="20"
+              step="1"
+              value="60"
+              class="slider"
+              id="myRange"
+            />
+          </div>
         </div>
-      </div>
 
-      <!-----------------------REFERENCE ----------------------------->
-      <div id="reference-container">
-        <h3>Reference of your character(s)?
-        </h3>
-        <sub-title>(pictures and text descriptions)</sub-title>
-        <div id="references-textarea" class="form-group">
-          <label for="form-control"></label>
-          <textarea class="form-control" rows="7"></textarea>
+        <!-----------------------KIND OF SHOT ----------------------------->
+        <div id="shot-container">
+          <h3>What kind of shot ?</h3>
+          <div id="shot-button-container">
+            <!--PORTRAIT-->
+            <input
+              id="Portrait"
+              type="radio"
+              value="Portrait"
+              name="option2"
+              hidden
+            />
+            <label for="Portrait" class="shot-button btn"> Portrait </label>
 
-          <div id="upload-button-container">
-            <div>
+            <!--HALF-BODY-->
+            <input
+              id="Half-Body"
+              type="radio"
+              value="Half-Body"
+              name="option2"
+              hidden
+            />
+            <label for="Half-Body" class="shot-button btn">Half-Body </label>
 
-              <label id="upload-button" for="actual-btn"> add picture(s)</label>
-              <input type="file" multiple="multiple" id="actual-btn" hidden />
+            <!--FULL-BODY-->
+            <input
+              id="Full-body"
+              type="radio"
+              value="Full-body"
+              name="option2"
+              hidden
+            />
+            <label for="Full-body" class="shot-button btn"> Full-body </label>
+          </div>
+        </div>
+
+        <!-----------------------REFERENCE ----------------------------->
+        <div id="reference-container">
+          <h3>Reference of your character(s)?</h3>
+          <sub-title>(pictures and text descriptions)</sub-title>
+          <div id="references-textarea" class="form-group">
+            <label for="form-control"></label>
+            <textarea class="form-control" rows="7"></textarea>
+
+            <div id="upload-button-container">
+              <div>
+                <label id="upload-button" for="actual-btn">
+                  add picture(s)</label
+                >
+                <input type="file" multiple="multiple" id="actual-btn" hidden />
+              </div>
             </div>
           </div>
-
-        </div>
-      </div>
-
-      <!-----------------------BACKGROUND----------------------------->
-
-      <div id="background-container">
-        <h3>What kind of background ?</h3>
-        <div id="background-button-container">
-
-          <!--FLAT/GRADIENT COLOR-->
-          <input id="FlatGradientColor" type="radio" value="Flat/Gradient color" name="option3" hidden />
-          <label for="FlatGradientColor" class="background-button btn"> Flat/Gradient color </label>
-
-
-
-
-          <!--SIMPLE BACKGROUND-->
-          <input id="SimpleBackground" type="radio" value="Simple background" name="option3" hidden />
-          <label for="SimpleBackground" class="background-button btn"> Simple background </label>
-
-
-
-
-          <!--COMPLEX BACKGROUND-->
-          <input id="ComplexBackground" type="radio" value="Complex background" name="option3" hidden />
-          <label for="ComplexBackground" class="background-button btn"> Complex background </label>
-
-
-
-
-          <!-----------------------EXTRAS----------------------------->
-
-
-
         </div>
 
-        <div id="extras-container">
-          <h3>Do you need more extras? ?</h3>
-          <div id="extras-button-container">
+        <!-----------------------BACKGROUND----------------------------->
 
-            <!--COMMERCIAL USE-->
-            <input id="CommercialUse" type="radio" value="Commercial use" name="option4" hidden />
-            <label for="CommercialUse" class="extra-button btn"> Commercial use </label>
+        <div id="background-container">
+          <h3>What kind of background ?</h3>
+          <div id="background-button-container">
+            <!--FLAT/GRADIENT COLOR-->
+            <input
+              id="FlatGradientColor"
+              type="radio"
+              value="Flat/Gradient color"
+              name="option3"
+              hidden
+            />
+            <label for="FlatGradientColor" class="background-button btn">
+              Flat/Gradient color
+            </label>
 
+            <!--SIMPLE BACKGROUND-->
+            <input
+              id="SimpleBackground"
+              type="radio"
+              value="Simple background"
+              name="option3"
+              hidden
+            />
+            <label for="SimpleBackground" class="background-button btn">
+              Simple background
+            </label>
 
+            <!--COMPLEX BACKGROUND-->
+            <input
+              id="ComplexBackground"
+              type="radio"
+              value="Complex background"
+              name="option3"
+              hidden
+            />
+            <label for="ComplexBackground" class="background-button btn">
+              Complex background
+            </label>
 
+            <!-----------------------EXTRAS----------------------------->
+          </div>
 
-            <!--COMPLEX DESIGN-->
+          <div id="extras-container">
+            <h3>Do you need more extras? ?</h3>
+            <div id="extras-button-container">
+              <!--COMMERCIAL USE-->
+              <input
+                id="CommercialUse"
+                type="radio"
+                value="Commercial use"
+                name="option4"
+                hidden
+              />
+              <label for="CommercialUse" class="extra-button btn">
+                Commercial use
+              </label>
 
-            <input id="ComplexDesign" type="radio" value="Complex design" name="option4" hidden />
-            <label for="ComplexDesign" class="extra-button btn"> Complex design </label>
+              <!--COMPLEX DESIGN-->
 
+              <input
+                id="ComplexDesign"
+                type="radio"
+                value="Complex design"
+                name="option4"
+                hidden
+              />
+              <label for="ComplexDesign" class="extra-button btn">
+                Complex design
+              </label>
 
+              <!--POV BUBBLESHOT-->
+              <input
+                id="PovBubbleshot"
+                type="radio"
+                value="POV Bubbleshot"
+                name="option4"
+                hidden
+              />
+              <label for="PovBubbleshot" class="extra-button btn">
+                POV Bubbleshot
+              </label>
 
-            <!--POV BUBBLESHOT-->
-            <input id="PovBubbleshot" type="radio" value="POV Bubbleshot" name="option4" hidden />
-            <label for="PovBubbleshot" class="extra-button btn"> POV Bubbleshot </label>
-
-
-            <!--CHARACTER RESEARCH-->
-            <input id="CharacterResearch" type="radio" value="Character research (5)" name="option4" hidden />
-            <label for="CharacterResearch" class="extra-button btn"> Character research (5) </label>
-
-
+              <!--CHARACTER RESEARCH-->
+              <input
+                id="CharacterResearch"
+                type="radio"
+                value="Character research (5)"
+                name="option4"
+                hidden
+              />
+              <label for="CharacterResearch" class="extra-button btn">
+                Character research (5)
+              </label>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
+      <div id="summary-container">
+        <h2>summary</h2>
+        <div id="summary-text-container">
+          <div>
+            <h3>Style :</h3>
+            <p class="summary-text-style"></p>
+          </div>
+          <div class="summary-text-character">
+            <h3>Number of Character(s) :</h3>
+            <p>test</p>
+          </div>
+          <div class="summary-text-shot">
+            <h3>Type of shot :</h3>
+            <p>test</p>
+          </div>
+          <div class="summary-text-description">
+            <h3>Description :</h3>
+            <p>test</p>
+          </div>
+          <div class="summary-text-bg">
+            <h3>Type of background :</h3>
+            <p>test</p>
+          </div>
+          <div class="summary-text-extra">
+            <h3>Extra(s) :</h3>
+            <p>test</p>
+          </div>
 
-
-    <div id="summary-container">
-      <h2> summary</h2>
-      <div id="summary-text-container">
-        <div class="summary-text">
-          <h3> Style : </h3>
-          <p> Heavy painting</p>
-        </div>
-        <div class="summary-text">
-          <h3> Number of Character(s) : </h3>
-          <p>test</p>
-        </div>
-        <div class="summary-text">
-          <h3> Type of shot : </h3>
-          <p> test </p>
-        </div>
-        <div class="summary-text">
-          <h3> Description : </h3>
-          <p>test</p>
-        </div>
-        <div class="summary-text">
-          <h3> Type of background : </h3>
-          <p>test</p>
-        </div>
-        <div class="summary-text">
-          <h3> Extra(s) : </h3>
-          <p>test</p>
+          <div id="totalcontainer">
+            <p>TOTAL</p>
+            <price> 300$</price>
+          </div>
         </div>
 
-        <div id="totalcontainer">
-          <p>TOTAL </p>
-          <price> 300$</price>
-
-        </div>
+        <input
+          id="submit-btn"
+          type="radio"
+          value="submit"
+          name="option4"
+          hidden
+        />
+        <label for="submit-btn" class="submit-button btn">
+          submit your order
+        </label>
       </div>
+    </main>
 
+    <footer></footer>
 
-      <input id="submit-btn" type="radio" value="submit" name="option4" hidden />
-      <label for="submit-btn" class="submit-button btn"> submit your order </label>
+    <!--JQuery-->
+    <script
+      type="module"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
 
-    </div>
-
-
-
-
-  </main>
-
-  <footer></footer>
-
-
-  <!--JQuery-->
-  <script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script src="/Sayuridrawsthings-commission/js/order-selection.js"></script>
-</body>
-
+    <script src="../js/order-selection.js"></script>
+  </body>
 </html>

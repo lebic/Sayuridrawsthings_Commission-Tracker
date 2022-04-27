@@ -1,631 +1,531 @@
 :root {
-    --selectiongradient1: #d133cc;
-    --selectiongradient2: #ffbafc;
-    --fontcolor: #a3a3a3;
-    --QuestionTitlecolor: #666666ec;
-    --fontcoloredbackground: white;
+  --selectiongradient1: #d133cc;
+  --selectiongradient2: #ffbafc;
+  --fontcolor: #a3a3a3;
+  --QuestionTitlecolor: #666666ec;
+  --fontcoloredbackground: white;
 }
-
 
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    justify-content: flex-start;
-    align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 
-    width: 100%;
-    height: 250vh;
-    background: url("/Sayuridrawsthings-commission/assets/images/Dojo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  width: 100%;
+  height: 250vh;
+  background: url("/Sayuridrawsthings-commission/assets/images/Dojo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
 
 /*------------  CARD ESTIMATED PRICE-----------*/
 
 #card-price {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 0 0 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0 0 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
 
+  position: fixed;
+  right: 0px;
+  top: 7vh;
 
-    position: fixed;
-    right: 0px;
-    top: 7vh;
+  padding: 1vh;
+  padding-left: 2vh;
 
-    padding: 1vh;
-    padding-left: 2vh;
+  font-family: "roboto", sans-serif;
+  font-size: 1.4vh;
+  font-variant: small-caps;
+  font-weight: 300;
+  line-height: 2.6vh;
 
-    font-family: 'roboto', sans-serif;
-    font-size: 1.4vh;
-    font-variant: small-caps;
-    font-weight: 300;
-    line-height: 2.6vh;
+  border-top-left-radius: 2vh;
+  border-bottom-left-radius: 2vh;
+  box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.14);
 
-    border-top-left-radius: 2vh;
-    border-bottom-left-radius: 2vh;
-    box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.14);
+  width: 40%;
+  height: fit-content;
+  background-color: white;
 
-    width: 40%;
-    height: fit-content;
-    background-color: white;
-
-    z-index: 2;
+  z-index: 2;
 }
 
 #card-price p {
-    font-family: 'roboto', sans-serif;
-    font-size: 2.5vh;
-    font-variant: small-caps;
-    font-weight: 500;
-    color: var(--selectiongradient1);
+  font-family: "roboto", sans-serif;
+  font-size: 2.5vh;
+  font-variant: small-caps;
+  font-weight: 500;
+  color: var(--selectiongradient1);
 }
-
 
 /*------------MAIN CARD ELEMENT*----------------*/
 
-
-
 #card-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    position: relative;
-    top: 6vh;
+  position: relative;
+  top: 6vh;
 
-    margin-top: 5vh;
+  margin-top: 5vh;
 
+  padding-top: 5vh;
+  padding-inline: 2vh;
 
-    padding-top: 5vh;
-    padding-inline: 2vh;
+  border-radius: 1.2vh;
 
-    border-radius: 1.2vh;
+  width: 40vh;
+  height: fit-content;
 
-    width: 40vh;
-    height: fit-content;
-
-    outline: none;
-    background-color: white;
+  outline: none;
+  background-color: white;
 }
 
 /* -------------QUESTION------------*/
 
 h3 {
-    display: flex;
+  display: flex;
 
-    margin-left: 1vh;
+  margin-left: 1vh;
 
-    font-family: 'roboto', sans-serif;
-    font-size: 1.7vh;
-    font-weight: 350;
-    color: var(--QuestionTitlecolor);
-
+  font-family: "roboto", sans-serif;
+  font-size: 1.7vh;
+  font-weight: 350;
+  color: var(--QuestionTitlecolor);
 }
 
 /* -------------SUBQUESTION------------*/
 
 sub-title {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    margin-top: 0.5vh;
-    margin-left: 1vh;
+  margin-top: 0.5vh;
+  margin-left: 1vh;
 
-    font-family: 'roboto', sans-serif;
-    font-size: 1.6vh;
-    font-weight: 350;
-    line-height: 1vh;
-    color: var(--QuestionTitlecolor);
-
+  font-family: "roboto", sans-serif;
+  font-size: 1.6vh;
+  font-weight: 350;
+  line-height: 1vh;
+  color: var(--QuestionTitlecolor);
 }
 
-
 /*--------------Buttons----------------*/
-
 
 /*Main style*/
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 3.5vh;
-    margin: 1vh;
+  height: 3.5vh;
+  margin: 1vh;
 
-    font-family: 'roboto', sans-serif;
-    font-weight: 300;
-    font-stretch: extra-expanded;
-    font-size: 1.5vh;
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-stretch: extra-expanded;
+  font-size: 1.5vh;
 
-    color: var(--fontcolor);
+  color: var(--fontcolor);
 
-    border: solid;
-    border-width: 0.19vh;
-    border-radius: 2vh;
-    border-color: var(--fontcolor);
-
+  border: solid;
+  border-width: 0.19vh;
+  border-radius: 2vh;
+  border-color: var(--fontcolor);
 }
 
 .artstyle-button {
-
-    width: 14vh;
+  width: 14vh;
 }
 
 .shot-button {
-    width: 16vh;
-
+  width: 16vh;
 }
 
 .background-button {
-    width: 20vh;
-
+  width: 20vh;
 }
 
 .extra-button {
-
-    width: 20vh;
+  width: 20vh;
 }
 
 .submit-button {
-    width: 25vh;
-    text-transform: uppercase;
+  width: 25vh;
+  text-transform: uppercase;
 }
 
-
-input[type=radio]:checked+label {
-    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
-    border-color: #d133cc;
-    color: white;
-
+input[type="radio"]:checked + label {
+  background: linear-gradient(
+    0.25turn,
+    var(--selectiongradient2),
+    var(--selectiongradient1)
+  );
+  border-color: #d133cc;
+  color: white;
 }
-
-
-
-
 
 /*------ ARTSTYLE QUESTION-----------*/
 
-
 #artstyle-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #artstyle-button-container {
-    display: flex;
-    justify-content: space-around;
-    align-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    margin-top: 1.5vh;
-    width: 36vh;
-    height: 19vh;
-    outline: none;
+  margin-top: 1.5vh;
+  width: 36vh;
+  height: 19vh;
+  outline: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*------------- NB OF CHARACTER QUESTION---------------*/
 
-
-
 #character-nb_container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 
-    margin-top: 3vh;
+  margin-top: 3vh;
 
-    font-family: 'roboto', sans-serif;
-    font-weight: 300;
-    font-stretch: extra-expanded;
-    font-size: 1.5vh;
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-stretch: extra-expanded;
+  font-size: 1.5vh;
 
-    color: var(--fontcolor);
+  color: var(--fontcolor);
 
-    height: 10vh;
-    width: 100%;
+  height: 10vh;
+  width: 100%;
 }
 
-
 .slidecontainer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 1.5vh;
-    /* Width of the outside container */
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 1.5vh;
+  /* Width of the outside container */
 }
 
 #character-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin: 1vh;
+  margin: 1vh;
 
+  color: var(--fontcolor);
 
+  border: solid;
+  border-width: 0.1vh;
+  border-radius: 1vh;
+  border-color: var(--fontcolor);
 
-    color: var(--fontcolor);
-
-    border: solid;
-    border-width: 0.1vh;
-    border-radius: 1vh;
-    border-color: var(--fontcolor);
-
-    width: 4vh;
-    height: 4vh;
-    background: white;
-
-
+  width: 4vh;
+  height: 4vh;
+  background: white;
 }
-
-
 
 /* The slider itself */
 .slider {
-    -webkit-appearance: none;
-    /* Override default CSS styles */
-    appearance: none;
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    padding: 4px;
-    margin: 1vh;
+  padding: 4px;
+  margin: 1vh;
 
-    width: 30vh;
-    /* Full-width */
-    height: 3vh;
-    /* Specified height */
-    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
-    /* Grey background */
-    outline: none;
-    /* Remove outline */
-    opacity: 0.7;
-    /* Set transparency (for mouse-over effects on hover) */
-    border-radius: 1.9vh;
-    -webkit-transition: .2s;
-    /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
+  width: 30vh;
+  /* Full-width */
+  height: 3vh;
+  /* Specified height */
+  background: linear-gradient(
+    0.25turn,
+    var(--selectiongradient2),
+    var(--selectiongradient1)
+  );
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  border-radius: 1.9vh;
+  -webkit-transition: 0.2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
 }
-
 
 /* Mouse-over effects */
 .slider:hover {
-    opacity: 1;
-    /* Fully shown on mouse-over */
+  opacity: 1;
+  /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    /* Override default look */
-    appearance: none;
-    border-radius: 50%;
-    width: 20px;
-    /* Set a specific slider handle width */
-    height: 20px;
-    /* Slider handle height */
-    background: white;
-    /* Green background */
-    cursor: pointer;
-    /* Cursor on hover */
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  background: white;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-    width: 30px;
-    /* Set a specific slider handle width */
-    height: 30px;
-    /* Slider handle height */
-    background: rgb(255, 255, 255);
-    /* Green background */
-    cursor: pointer;
-    /* Cursor on hover */
+  width: 30px;
+  /* Set a specific slider handle width */
+  height: 30px;
+  /* Slider handle height */
+  background: rgb(255, 255, 255);
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*------------- KIND OF SHOT QUESTION---------------*/
 #shot-container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 3vh;
 }
 
 #shot-button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    margin-top: 1.5vh;
-
+  margin-top: 1.5vh;
 }
-
-
-
-
-
-
-
-
-
 
 /*-------------REFERENCE QUESTION----------------*/
 
 #reference-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    margin-top: 3vh;
-    width: 100%;
-
+  margin-top: 3vh;
+  width: 100%;
 }
 
 #references-textarea {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    justify-self: center;
+  justify-self: center;
 
-    margin: 1vh;
-    margin-left: 1vh;
-    margin-top: 1.5vh;
-    width: 97%;
+  margin: 1vh;
+  margin-left: 1vh;
+  margin-top: 1.5vh;
+  width: 97%;
 }
-
-
-
 
 /*UPLOAD BUTTON*/
 
 #upload-button-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row-reverse;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
 
+  font-family: "roboto", sans-serif;
+  font-size: 1.5vh;
+  color: var(--fontcolor);
 
-    font-family: 'roboto', sans-serif;
-    font-size: 1.5vh;
-    color: var(--fontcolor);
+  border-radius: 2vh;
+  border-color: var(--fontcolor);
 
-    border-radius: 2vh;
-    border-color: var(--fontcolor);
-
-
-
-
-    outline: none;
-    z-index: 1;
+  outline: none;
+  z-index: 1;
 }
 
 #upload-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  text-transform: uppercase;
+  font-size: 1vh;
 
-
-    text-transform: uppercase;
-    font-size: 1vh;
-
-    background: linear-gradient(0.25turn, var(--selectiongradient2), var(--selectiongradient1));
-    width: 10vh;
-    height: 3vh;
-    color: white;
-    padding: 0.5rem;
-    font-family: sans-serif;
-    border-radius: 0.9rem;
-    cursor: pointer;
-    margin-top: 1rem;
+  background: linear-gradient(
+    0.25turn,
+    var(--selectiongradient2),
+    var(--selectiongradient1)
+  );
+  width: 10vh;
+  height: 3vh;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-------------BACKGROUND QUESTION----------------*/
 
 #background-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-
-    width: 100%;
+  width: 100%;
 }
 
 #background-button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-    height: 20vh;
+  height: 20vh;
 
-    margin-top: 1.5vh;
+  margin-top: 1.5vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-------------'EXTRAS' QUESTION----------------*/
 
 #extras-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    width: 100%;
+  width: 100%;
 }
 
 #extras-button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-    margin-top: 1.5vh;
-    margin-bottom: 5vh;
+  margin-top: 1.5vh;
+  margin-bottom: 5vh;
 
-    height: 25vh;
+  height: 25vh;
 }
-
-
-
 
 /*-------------SUMMARY----------------*/
 
 #summary-container h2 {
-    align-items: center;
-    text-transform: uppercase;
-    font-family: 'roboto', sans-serif;
-    font-size: 2.5vh;
-    font-weight: 600;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "roboto", sans-serif;
+  font-size: 2.5vh;
+  font-weight: 600;
 }
 
 #summary-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    position: relative;
-    top: 6vh;
+  position: relative;
+  top: 6vh;
 
-    margin-top: 5vh;
+  margin-top: 5vh;
 
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+  padding-inline: 2vh;
 
+  border-radius: 1.2vh;
 
-    padding-top: 4vh;
-    padding-bottom: 5vh;
-    padding-inline: 2vh;
+  width: 40vh;
+  height: fit-content;
 
-    border-radius: 1.2vh;
-
-    width: 40vh;
-    height: fit-content;
-
-    outline: none;
-    background-color: white;
+  outline: none;
+  background-color: white;
 }
 
 #summary-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    margin-top: 2vh;
-    width: 100%;
+  margin-top: 2vh;
+  width: 100%;
 }
 
 .summary-text {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-direction: row;
-    line-height: 4vh;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: row;
+  line-height: 4vh;
+  width: 100%;
 }
 
 .summary-text p {
-    margin-inline: 1vh;
-    font-family: 'roboto', sans-serif;
-    font-size: 2vh;
-    font-weight: 400;
+  margin-inline: 1vh;
+  font-family: "roboto", sans-serif;
+  font-size: 2vh;
+  font-weight: 400;
 
-    color: var(--fontcolor);
+  color: var(--fontcolor);
 }
 
-
 #totalcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
 
-    margin-top: 3vh;
-    width: 100%;
-    height: 5vh;
+  margin-top: 3vh;
+  width: 100%;
+  height: 5vh;
 
-    border-top: solid var(--selectiongradient1);
-    border-width: 0.2vh;
+  border-top: solid var(--selectiongradient1);
+  border-width: 0.2vh;
 }
 
 #totalcontainer price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'roboto', sans-serif;
-    font-size: 3vh;
-    font-weight: 600;
-    color: var(--selectiongradient1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "roboto", sans-serif;
+  font-size: 3vh;
+  font-weight: 600;
+  color: var(--selectiongradient1);
 }
 
 #totalcontainer p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-inline: 1vh;
-    text-transform: uppercase;
-    font-family: 'roboto', sans-serif;
-    font-size: 3vh;
-    font-stretch: semi-expanded;
-    font-weight: 600;
-    color: var(--selectiongradient1);
+  margin-inline: 1vh;
+  text-transform: uppercase;
+  font-family: "roboto", sans-serif;
+  font-size: 3vh;
+  font-stretch: semi-expanded;
+  font-weight: 600;
+  color: var(--selectiongradient1);
 }

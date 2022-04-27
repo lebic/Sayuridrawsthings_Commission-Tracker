@@ -1,95 +1,79 @@
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    height: 90vh;
-    width: 100%;
+  height: 90vh;
+  width: 100%;
 
- 
-    background-image: url('/assets/images/Dojo.png');
-    background-repeat: no-repeat;
-    background-size: 170vh;
-    background-attachment: fixed;
-    background-position-x: 10%;
+  background-image: url("../assets/images/Dojo.png");
+  background-repeat: no-repeat;
+  background-size: 170vh;
+  background-attachment: fixed;
+  background-position-x: 10%;
 
-    z-index: 0;
-
+  z-index: 0;
 }
 /* TITLE */
 
 title {
-    display: flex;
+  display: flex;
 }
-
 
 h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-transform:uppercase;
-    font-weight: 700;
-    font-size: 3.2vh;
-    color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.2vh;
+  color: white;
 }
-
 
 h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-transform:uppercase;
-    font-weight: 300;
-    font-size: 3.2vh;
-    color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.2vh;
+  color: white;
 
-    background-color: rgba(255, 255, 255, 0.26);
-    width: 60%;
+  background-color: rgba(255, 255, 255, 0.26);
+  width: 60%;
 }
-
-
 
 /* BUTTON */
 
-
 h3 {
-    font-variant: small-caps;
+  font-variant: small-caps;
 }
 
 a {
-    color: rgb(71, 71, 71);
-    text-decoration: none;
+  color: rgb(71, 71, 71);
+  text-decoration: none;
 }
 
 #start-Order-Button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 3%;
-    padding: 10px;
-    
-    
-    font-family: 'roboto',sans-serif;
-    font-size: 75%;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgba(53, 53, 53, 0.616);
+  position: relative;
+  top: 3%;
+  padding: 10px;
 
-    height: 3vh;
-    border-radius: 20px;
-    width: 45%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 2px 16px -4px #0000008c;
+  font-family: "roboto", sans-serif;
+  font-size: 75%;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(53, 53, 53, 0.616);
+
+  height: 3vh;
+  border-radius: 20px;
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 16px -4px #0000008c;
 }
-
-
-
-
-
-
-
-
 
 /* ----------------------------GRAPHIC ELEMENT----------------------- */
 
@@ -98,84 +82,82 @@ a {
 /*White*/
 
 h1:after {
-    content: "";
-    display: flex;
-    position: absolute;
-    top: 0%;
-    left: 3%;
-    height: 90vh;
-    width: 88%;
-    border-inline: solid;
-    border-left-width: 8px;
-    border-color: white;
-    z-index: 1;
-   
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  height: 90vh;
+  width: 88%;
+  border-inline: solid;
+  border-left-width: 8px;
+  border-color: white;
+  z-index: 1;
 }
 
 /* Pink */
 
 h1:before {
-    content:"";
-    position: absolute;
-    top: 0%;
-    right: 1%;
-    height: 90vh;
-    width: 1vh;
-    background-color: #ffc9fb7a;
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  height: 90vh;
+  width: 1vh;
+  background-color: #ffc9fb7a;
 }
 
 /*---HORIZONTAL---*/
 
 h2:after {
-    content: "";
-    display: flex;
-    position: absolute;
-    top: 44%;
-    left: 0%;
-    height: 5vh;
-    width: 5vh;
-    border-top: solid;
-    border-top-width: 1.2vh;
-    border-color: #ffc9fb7a;
-    z-index: 1;
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 44%;
+  left: 0%;
+  height: 5vh;
+  width: 5vh;
+  border-top: solid;
+  border-top-width: 1.2vh;
+  border-color: #ffc9fb7a;
+  z-index: 1;
 }
 
 h2:before {
-    content: "";
-    position: absolute;
-    top: 48%;
-    right: 0% ;
-    height: 10vh;
-    width: 6vh;
-    border-bottom: solid;
-    border-bottom-width: 1.2vh;
-    border-color: rgba(255, 255, 255, 0.336);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 48%;
+  right: 0%;
+  height: 10vh;
+  width: 6vh;
+  border-bottom: solid;
+  border-bottom-width: 1.2vh;
+  border-color: rgba(255, 255, 255, 0.336);
+  z-index: 1;
 }
-
 
 /* RETURN BUTTON */
 
 #return-Button {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
 
-    font-family: "roboto", sans-serif;
-    font-weight: 200;
-    font-size: 4vh;
-    top: 3vh;
-    left: 4vh;
+  font-family: "roboto", sans-serif;
+  font-weight: 200;
+  font-size: 4vh;
+  top: 3vh;
+  left: 4vh;
 
-    height: 5vh;
-    width: 10vh;
-    border-radius: 1.5vh;
-    background-color: rgba(255, 255, 255, 0.425);
+  height: 5vh;
+  width: 10vh;
+  border-radius: 1.5vh;
+  background-color: rgba(255, 255, 255, 0.425);
 
-    z-index: 2;
+  z-index: 2;
 }
 
 .return-button-icon {
-    font-size: 2.5vh;
+  font-size: 2.5vh;
 }

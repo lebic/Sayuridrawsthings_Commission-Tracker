@@ -18,7 +18,7 @@ main {
 
   width: 50%;
   height: 70vh;
-  background: url("/assets/images/SFW_Cold-\ Mountain_Light.jpg");
+  background: url("./assets/images/SFW_Cold/ Mountain_Light.jpg");
   background-size: cover;
   background-position: 51%;
 }
