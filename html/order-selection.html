@@ -56,9 +56,10 @@
             <input
               id="Heavy-Painting"
               type="radio"
-              value="100"
+              value="80"
               name="option1"
               hidden
+              oninput="setFormValue('artStyle', this.value)"
             />
             <label
               for="Heavy-Painting"
@@ -71,9 +72,10 @@
             <input
               id="Light-Painting"
               type="radio"
-              value="80"
+              value="60"
               name="option1"
               hidden
+              oninput="setFormValue('artStyle', this.value)"
             />
             <label
               for="Light-Painting"
@@ -83,7 +85,14 @@
             </label>
 
             <!--LINEART-->
-            <input id="Lineart" type="radio" value="60" name="option1" hidden />
+            <input
+              id="Lineart"
+              type="radio"
+              value="40"
+              name="option1"
+              hidden
+              oninput="setFormValue('artStyle', this.value)"
+            />
             <label for="Lineart" class="Lineart artstyle-button btn">
               Lineart
             </label>
@@ -92,16 +101,24 @@
             <input
               id="Color-sketch"
               type="radio"
-              value="40"
+              value="20"
               name="option1"
               hidden
+              oninput="setFormValue('artStyle', this.value)"
             />
             <label for="Color-sketch" class="Color-sketch artstyle-button btn">
               Color sketch
             </label>
 
             <!--SKETCH-->
-            <input id="Sketch" type="radio" value="20" name="option1" hidden />
+            <input
+              id="Sketch"
+              type="radio"
+              value="15"
+              name="option1"
+              hidden
+              oninput="setFormValue('artStyle', this.value)"
+            />
             <label for="Sketch" class="Sketch artstyle-button btn">
               Sketch
             </label>
@@ -123,6 +140,7 @@
               value="60"
               class="slider"
               id="myRange"
+              onchange="setFormValue('range', this.value)"
             />
           </div>
         </div>
@@ -135,9 +153,10 @@
             <input
               id="Portrait"
               type="radio"
-              value="Portrait"
+              value="0"
               name="option2"
               hidden
+              oninput="setFormValue('shotType', this.value)"
             />
             <label for="Portrait" class="shot-button btn"> Portrait </label>
 
@@ -145,9 +164,10 @@
             <input
               id="Half-Body"
               type="radio"
-              value="Half-Body"
+              value="20"
               name="option2"
               hidden
+              oninput="setFormValue('shotType', this.value)"
             />
             <label for="Half-Body" class="shot-button btn">Half-Body </label>
 
@@ -155,9 +175,10 @@
             <input
               id="Full-body"
               type="radio"
-              value="Full-body"
+              value="40"
               name="option2"
               hidden
+              oninput="setFormValue('shotType', this.value)"
             />
             <label for="Full-body" class="shot-button btn"> Full-body </label>
           </div>
@@ -169,14 +190,25 @@
           <sub-title>(pictures and text descriptions)</sub-title>
           <div id="references-textarea" class="form-group">
             <label for="form-control"></label>
-            <textarea class="form-control" rows="7"></textarea>
+            <textarea
+              class="form-control"
+              rows="7"
+              onchange="setFormValue('desc', this.value)"
+            ></textarea>
 
             <div id="upload-button-container">
               <div>
                 <label id="upload-button" for="actual-btn">
                   add picture(s)</label
                 >
-                <input type="file" multiple="multiple" id="actual-btn" hidden />
+                <input
+                  type="file"
+                  multiple="multiple"
+                  accept="image/*"
+                  id="actual-btn"
+                  hidden
+                  onchange="inspect(this.value)"
+                />
               </div>
             </div>
           </div>
@@ -194,6 +226,7 @@
               value="Flat/Gradient color"
               name="option3"
               hidden
+              oninput="setFormValue('bgType', this.value)"
             />
             <label for="FlatGradientColor" class="background-button btn">
               Flat/Gradient color
@@ -206,6 +239,7 @@
               value="Simple background"
               name="option3"
               hidden
+              oninput="setFormValue('bgType', this.value)"
             />
             <label for="SimpleBackground" class="background-button btn">
               Simple background
@@ -218,6 +252,7 @@
               value="Complex background"
               name="option3"
               hidden
+              oninput="setFormValue('bgType', this.value)"
             />
             <label for="ComplexBackground" class="background-button btn">
               Complex background
@@ -236,6 +271,7 @@
                 value="Commercial use"
                 name="option4"
                 hidden
+                oninput="setFormValue('extras', this.value)"
               />
               <label for="CommercialUse" class="extra-button btn">
                 Commercial use
@@ -249,6 +285,7 @@
                 value="Complex design"
                 name="option4"
                 hidden
+                oninput="setFormValue('extras', this.value)"
               />
               <label for="ComplexDesign" class="extra-button btn">
                 Complex design
@@ -261,6 +298,7 @@
                 value="POV Bubbleshot"
                 name="option4"
                 hidden
+                oninput="setFormValue('extras', this.value)"
               />
               <label for="PovBubbleshot" class="extra-button btn">
                 POV Bubbleshot
@@ -273,6 +311,7 @@
                 value="Character research (5)"
                 name="option4"
                 hidden
+                oninput="setFormValue('extras', this.value)"
               />
               <label for="CharacterResearch" class="extra-button btn">
                 Character research (5)
@@ -285,29 +324,29 @@
       <div id="summary-container">
         <h2>summary</h2>
         <div id="summary-text-container">
-          <div>
-            <h3>Style :</h3>
-            <p class="summary-text-style"></p>
+          <div class="summary-text-character">
+            <h3>Art style :</h3>
+            <p>{{result.artStyle}}</p>
           </div>
           <div class="summary-text-character">
             <h3>Number of Character(s) :</h3>
-            <p>test</p>
+            <p>{{result.range}}</p>
           </div>
           <div class="summary-text-shot">
             <h3>Type of shot :</h3>
-            <p>test</p>
+            <p>{{result.shotType}}</p>
           </div>
           <div class="summary-text-description">
             <h3>Description :</h3>
-            <p>test</p>
+            <p>{{result.desc}}</p>
           </div>
           <div class="summary-text-bg">
             <h3>Type of background :</h3>
-            <p>test</p>
+            <p>{{result.bgType}}</p>
           </div>
           <div class="summary-text-extra">
             <h3>Extra(s) :</h3>
-            <p>test</p>
+            <p>{{result.extras}}</p>
           </div>
 
           <div id="totalcontainer">

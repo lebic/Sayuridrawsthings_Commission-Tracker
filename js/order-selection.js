@@ -17,10 +17,25 @@ slider.oninput = function () {
 
 var fired_button = $("input").val();
 
+var result = {
+  artStyle: undefined,
+  range: undefined,
+  shotType: undefined,
+  desc: undefined,
+  pictures: [],
+  bgType: undefined,
+  extras: undefined,
+};
+
 $("input").click(function () {
-  var fired_button = $(this).val();
+  var fired_button = $(this).val() * 50;
   console.log("This button " + fired_button + " was clicked");
 });
+
+function setFormValue(type, value) {
+  result[value] = value;
+  console.log("RESULT", result);
+}
 
 // Selection of all value of Artstyle
 const AllBtn = document.getElementsByClassName("btn");
@@ -53,3 +68,30 @@ AllBtn[0].addEventListener("onclick", () => {
     console.log("hello");
   }
 });
+
+function toDataURL(src, callback, outputFormat) {
+  var img = new Image();
+  img.crossOrigin = "Anonymous";
+  img.onload = function () {
+    var canvas = document.createElement("CANVAS");
+    var ctx = canvas.getContext("2d");
+    var dataURL;
+    canvas.height = this.naturalHeight;
+    canvas.width = this.naturalWidth;
+    ctx.drawImage(this, 0, 0);
+    dataURL = canvas.toDataURL(outputFormat);
+    callback(dataURL);
+  };
+  img.src = src;
+  if (img.complete || img.complete === undefined) {
+    img.src =
+      "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+    img.src = src;
+  }
+}
+
+function inspect(e) {
+  console.log(e);
+
+  console.log(toDataURL(e));
+}
